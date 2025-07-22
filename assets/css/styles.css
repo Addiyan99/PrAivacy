@@ -316,6 +316,11 @@ nav {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    word-spacing: 0.1em;
+    letter-spacing: 0.02em;
 }
 
 .trust-highlight {
@@ -396,6 +401,11 @@ nav {
     color: var(--text-secondary);
     line-height: 1.8;
     margin: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    word-spacing: 0.1em;
+    letter-spacing: 0.02em;
 }
 
 .card-accent {
@@ -562,6 +572,11 @@ nav {
     margin: 0 0 1.5rem 0;
     position: relative;
     z-index: 2;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    word-spacing: 0.05em;
+    letter-spacing: 0.01em;
 }
 
 .card-footer {
@@ -691,6 +706,47 @@ nav {
         width: 50px;
         height: 50px;
     }
+}
+
+/* Professional Typography Enhancements */
+.card-content p::first-letter {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.mission-statement p::first-letter {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Improve text rendering */
+.card-content p,
+.mission-statement p,
+.modern-aspiration p {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better paragraph spacing */
+.card-content,
+.mission-statement {
+    text-indent: 0;
+}
+
+/* Professional quote styling for emphasized text */
+.mission-statement strong {
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+    position: relative;
+}
+
+.trust-highlight {
+    font-style: italic;
+    font-weight: 600;
 }
 
 /* Cards */
