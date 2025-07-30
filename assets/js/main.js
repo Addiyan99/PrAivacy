@@ -114,8 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     element.classList.contains('stat-item') ||
                     element.classList.contains('product-card') ||
                     element.classList.contains('award-card') ||
-                    element.classList.contains('vision-card') ||
-                    element.classList.contains('aspiration-card') ||
                     element.classList.contains('support-notice')) {
                     element.style.opacity = '1';
                     element.style.transform = 'translateY(0)';
@@ -127,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe elements for animation
-    const animatedElements = document.querySelectorAll('.card, .timeline-item, .product-card, .award-card, .vision-card, .aspiration-card, .support-notice');
+    const animatedElements = document.querySelectorAll('.card, .timeline-item, .product-card, .award-card, .support-notice');
     animatedElements.forEach(el => {
         // Set initial state for animation
         el.style.opacity = '0';
@@ -198,13 +196,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Keyboard navigation support
+    // Product Cards with Learn More buttons
+    const productCards = document.querySelectorAll('.product-card');
+    
+    productCards.forEach(card => {
+        const learnMoreBtn = card.querySelector('.learn-more-btn');
+        
+        if (!learnMoreBtn) return;
+        
+        // Add accessibility attributes
+        const productName = card.querySelector('h3').textContent;
+        learnMoreBtn.setAttribute('aria-label', `Learn more about ${productName}`);
+        
+        // Add smooth hover animation for the whole card when hovering learn more button
+        learnMoreBtn.addEventListener('mouseenter', function() {
+            card.style.transform = 'translateY(-8px)';
+        });
+        
+        learnMoreBtn.addEventListener('mouseleave', function() {
+            card.style.transform = 'translateY(-5px)';
+        });
+    });
+
+    // Global keyboard navigation support
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && mobileMenu) {
-            mobileMenu.classList.remove('active');
-            if (mobileMenuToggle) {
-                mobileMenuToggle.innerHTML = '☰';
+        if (e.key === 'Escape') {
+            // Close mobile menu
+            if (mobileMenu) {
+                mobileMenu.classList.remove('active');
+                if (mobileMenuToggle) {
+                    mobileMenuToggle.innerHTML = '☰';
+                }
             }
+            
+            // Reset any transformed product cards
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.style.transform = '';
+            });
         }
     });
 
