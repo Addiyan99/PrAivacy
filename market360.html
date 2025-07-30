@@ -107,6 +107,35 @@
                 </div>
             </div>
             
+            <!-- Market360 Slideshow Section -->
+            <div class="feature-wall">
+                <div class="feature-wall-content">
+                    <div class="feature-wall-left">
+                        <h2>Market360 in action!</h2>
+                    </div>
+                    
+                    <div class="feature-wall-right">
+                        <div class="slideshow-container">
+                            <div class="slide active" data-slide="0">
+                                <img src="assets/images/market360_1.jpeg" alt="Market360 Digital Hub Interface" loading="lazy">
+                            </div>
+                            <div class="slide" data-slide="1">
+                                <img src="assets/images/market360_2.jpeg" alt="Market360 Mobile Commerce" loading="lazy">
+                            </div>
+                            <div class="slide" data-slide="2">
+                                <img src="assets/images/market360_3.jpeg" alt="Market360 Analytics Dashboard" loading="lazy">
+                            </div>
+                            <div class="slide" data-slide="1">
+                                <img src="assets/images/market360_2.jpeg" alt="Market360 Mobile Commerce" loading="lazy">
+                            </div>
+                            <div class="slide" data-slide="2">
+                                <img src="assets/images/market360_3.jpeg" alt="Market360 Analytics Dashboard" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Features List -->
             <div class="features-section">
                 <h2>Key Features & Benefits</h2>
@@ -177,5 +206,68 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script>
+        // Market360 Feature Wall Slideshow
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            // Function to show specific slide
+            function showSlide(index) {
+                // Remove active class from all slides
+                slides.forEach(slide => {
+                    slide.classList.remove('active', 'prev');
+                });
+                
+                // Add prev class to current slide before switching
+                if (slides[currentSlide]) {
+                    slides[currentSlide].classList.add('prev');
+                }
+                
+                // Set new active slide
+                currentSlide = index;
+                
+                // Delay the active class addition for smooth transition
+                setTimeout(() => {
+                    if (slides[currentSlide]) {
+                        slides[currentSlide].classList.add('active');
+                    }
+                }, 50);
+            }
+            
+            // Function to go to next slide
+            function nextSlide() {
+                const next = (currentSlide + 1) % slides.length;
+                showSlide(next);
+            }
+            
+            // Start auto-play
+            function startAutoPlay() {
+                slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+            }
+            
+            // Stop auto-play
+            function stopAutoPlay() {
+                clearInterval(slideInterval);
+            }
+            
+            
+            // Pause auto-play on hover
+            const featureWall = document.querySelector('.feature-wall');
+            if (featureWall) {
+                featureWall.addEventListener('mouseenter', stopAutoPlay);
+                featureWall.addEventListener('mouseleave', startAutoPlay);
+            }
+            
+            // Initialize slideshow with delay to ensure proper loading
+            setTimeout(() => {
+                showSlide(0);
+                startAutoPlay();
+            }, 100);
+            
+            
+        });
+    </script>
 </body>
 </html>
