@@ -584,7 +584,7 @@ nav {
 .product-actions {
     padding: 0 2rem 1rem 2rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .learn-more-btn {
@@ -1068,6 +1068,165 @@ nav {
 .stat-label {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+/* Mobile App Download Section */
+.app-download {
+    padding: 6rem 0;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-primary);
+    text-align: center;
+}
+
+.app-download-content h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.app-download-content p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-primary);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 200px;
+    backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.download-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.download-btn:hover::before {
+    left: 100%;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--border-secondary);
+    background: var(--bg-hover);
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-primary);
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.btn-subtitle {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 0.2rem;
+}
+
+.btn-title {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1;
+}
+
+.android-btn:hover {
+    background: linear-gradient(135deg, var(--bg-hover), rgba(52, 168, 83, 0.1));
+    border-color: rgba(52, 168, 83, 0.3);
+}
+
+.ios-btn:hover {
+    background: linear-gradient(135deg, var(--bg-hover), rgba(0, 122, 255, 0.1));
+    border-color: rgba(0, 122, 255, 0.3);
+}
+
+.huawei-btn:hover {
+    background: linear-gradient(135deg, var(--bg-hover), rgba(255, 0, 0, 0.1));
+    border-color: rgba(255, 0, 0, 0.3);
+}
+
+/* Mobile responsive for app download */
+@media (max-width: 768px) {
+    .app-download {
+        padding: 4rem 0;
+    }
+    
+    .app-download-content h2 {
+        font-size: 2rem;
+    }
+    
+    .download-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .download-btn {
+        min-width: 250px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-buttons {
+        gap: 0.75rem;
+    }
+    
+    .download-btn {
+        min-width: 220px;
+        padding: 0.875rem 1.5rem;
+    }
+    
+    .btn-text {
+        gap: 0.1rem;
+    }
+    
+    .btn-subtitle {
+        font-size: 0.75rem;
+    }
+    
+    .btn-title {
+        font-size: 1rem;
+    }
 }
 
 /* Footer */

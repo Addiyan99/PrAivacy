@@ -13,7 +13,9 @@
       "Bash(gh repo create:*)",
       "Bash(git remote add:*)",
       "Bash(git push:*)",
-      "WebFetch(domain:www.raycast.com)"
+      "WebFetch(domain:www.raycast.com)",
+      "Bash(true)",
+      "Bash(rmdir:*)"
     ],
     "deny": []
   }
