@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', function() {
         videoObserver.observe(heroVideo);
     }
 
-    // Intersection Observer for animations
+    // Enhanced Intersection Observer for scroll animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.15,
+        rootMargin: '0px 0px -80px 0px'
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -108,29 +108,40 @@ document.addEventListener('DOMContentLoaded', function() {
             if (entry.isIntersecting) {
                 const element = entry.target;
                 
-                // Animate cards and all observed elements
-                if (element.classList.contains('card') || 
-                    element.classList.contains('timeline-item') ||
-                    element.classList.contains('stat-item') ||
-                    element.classList.contains('product-card') ||
-                    element.classList.contains('award-card') ||
-                    element.classList.contains('support-notice')) {
-                    element.style.opacity = '1';
-                    element.style.transform = 'translateY(0)';
+                // Add fade-in-up animation
+                element.classList.add('animate-fade-in-up');
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+                
+                // Stagger animation for grid items
+                if (element.parentElement.classList.contains('products-grid') || 
+                    element.parentElement.classList.contains('cards-grid') ||
+                    element.parentElement.classList.contains('awards-grid')) {
+                    const siblings = Array.from(element.parentElement.children);
+                    const index = siblings.indexOf(element);
+                    element.style.animationDelay = `${index * 0.1}s`;
                 }
-
-                // Animate elements on scroll (removed stat counter since investor section is removed)
             }
         });
     }, observerOptions);
 
-    // Observe elements for animation
-    const animatedElements = document.querySelectorAll('.card, .timeline-item, .product-card, .award-card, .support-notice');
-    animatedElements.forEach(el => {
+    // Enhanced element selection for animations
+    const animatedElements = document.querySelectorAll(`
+        .section, 
+        .card, 
+        .timeline-item, 
+        .product-card, 
+        .award-card, 
+        .support-notice,
+        .impact-item,
+        .story-card
+    `);
+    
+    animatedElements.forEach((el, index) => {
         // Set initial state for animation
         el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.transform = 'translateY(40px)';
+        el.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
         observer.observe(el);
     });
 
@@ -236,6 +247,65 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
+    // Animated Timeline on Scroll
+    const timeline = document.querySelector('.timeline');
+    const timelineProgress = document.querySelector('.timeline-progress');
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    
+    if (timeline && timelineProgress && timelineItems.length > 0) {
+        function updateTimeline() {
+            const timelineRect = timeline.getBoundingClientRect();
+            const timelineTop = timelineRect.top + window.pageYOffset;
+            const timelineHeight = timeline.offsetHeight;
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            
+            // Calculate how much of the timeline is visible
+            const timelineStart = timelineTop - windowHeight * 0.8;
+            const timelineEnd = timelineTop + timelineHeight - windowHeight * 0.2;
+            
+            if (scrollTop >= timelineStart && scrollTop <= timelineEnd) {
+                // Calculate progress percentage
+                const progress = Math.min(Math.max((scrollTop - timelineStart) / (timelineEnd - timelineStart), 0), 1);
+                timelineProgress.style.height = `${progress * 100}%`;
+                
+                // Update active timeline items
+                timelineItems.forEach((item, index) => {
+                    const itemRect = item.getBoundingClientRect();
+                    const itemTop = itemRect.top + window.pageYOffset;
+                    const itemCenter = itemTop + (item.offsetHeight / 2);
+                    const viewportCenter = scrollTop + (windowHeight / 2);
+                    
+                    // Check if item is in the active zone (center of viewport)
+                    const activeZone = windowHeight * 0.3; // 30% of viewport height
+                    const isActive = Math.abs(itemCenter - viewportCenter) < activeZone;
+                    
+                    if (isActive) {
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+            } else if (scrollTop < timelineStart) {
+                timelineProgress.style.height = '0%';
+                timelineItems.forEach(item => item.classList.remove('active'));
+            } else {
+                timelineProgress.style.height = '100%';
+                timelineItems.forEach(item => item.classList.remove('active'));
+                // Keep the last item active when fully scrolled
+                if (timelineItems.length > 0) {
+                    timelineItems[timelineItems.length - 1].classList.add('active');
+                }
+            }
+        }
+        
+        // Add scroll listener for timeline
+        window.addEventListener('scroll', updateTimeline);
+        
+        // Initial call
+        updateTimeline();
+    }
 
     // Console branding
     console.log('%c🔐 prAIvacy', 'color: #6366f1; font-size: 20px; font-weight: bold;');
