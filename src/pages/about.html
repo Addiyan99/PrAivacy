@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About PrAIvacy - Trust Tech Architecture</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html">
+                <img src="../assets/images/logo_black.jpg" alt="PrAIvacy" class="logo">
+            </a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="index.html#products">Products</a></li>
+                <li><a href="index.html#milestones">Key Milestones</a></li>
+                <li><a href="index.html#recognition">Recognition & IPs</a></li>
+                <li><a href="index.html#governance">Corporate Governance</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="index.html#milestones">Key Milestones</a></li>
+                    <li><a href="index.html#recognition">Recognition & IPs</a></li>
+                    <li><a href="index.html#governance">Corporate Governance</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Animated Journey Line -->
+    <div class="journey-line">
+        <div class="journey-progress" id="journeyProgress"></div>
+        <div class="journey-dots">
+            <div class="journey-dot" data-section="hero" data-color="blue">
+                <span class="dot-label">Start</span>
+            </div>
+            <div class="journey-dot" data-section="problem" data-color="red">
+                <span class="dot-label">Challenge</span>
+            </div>
+            <div class="journey-dot" data-section="architecture" data-color="green">
+                <span class="dot-label">Architecture</span>
+            </div>
+            <div class="journey-dot" data-section="solution" data-color="purple">
+                <span class="dot-label">Solution</span>
+            </div>
+            <div class="journey-dot" data-section="vision" data-color="orange">
+                <span class="dot-label">Future</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero about-hero" id="hero" data-journey-color="blue">
+        <div class="hero-image">
+            <img src="../assets/images/About/Do Not Sell My Personal Information_ California….jpg" alt="Privacy Technology Architecture" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Redefining AI for the Real World</h1>
+            <p>While the world races to develop ever-more complex AI agents, the foundational layer—trust—remains neglected.</p>
+        </div>
+        <div class="scroll-indicator"></div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section class="section" id="problem" data-journey-color="red">
+        <div class="container">
+            <div class="section-header-visual">
+                <div class="problem-illustration">
+                    <div class="image-container">
+                        <img src="../assets/images/About/_Smartphone Interactive Display_ A close-up view….jpg" alt="Interactive Privacy Technology" class="section-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Current AI Limitations</h3>
+                                <p>Missing trust layer in digital interactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-header-content">
+                    <h2>The Real-World AI Challenge</h2>
+                    <p>These are practical, real-life requests that today's mainstream AI systems simply cannot fulfill:</p>
+                </div>
+            </div>
+            
+            <div class="problem-cards-grid">
+                <div class="problem-card" data-animate="fadeInUp">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Trust/Shield icon -->
+                            <path d="M24 4L36 10V22C36 30 30 37 24 44C18 37 12 30 12 22V10L24 4Z" stroke="currentColor" stroke-width="2" fill="url(#trustGradient)"/>
+                            <path d="M20 24L22 26L28 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="trustGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)" />
+                                    <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="problem-quote">"Can I trust this business or person?"</div>
+                </div>
+                
+                <div class="problem-card" data-animate="fadeInUp" data-delay="100">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Parking/Access icon -->
+                            <rect x="8" y="16" width="32" height="20" rx="4" stroke="currentColor" stroke-width="2" fill="url(#parkingGradient)"/>
+                            <circle cx="16" cy="30" r="3" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="30" r="3" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 12V16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 8L24 12L28 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="parkingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)" />
+                                    <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="problem-quote">"Please arrange my visitor access and parking."</div>
+                </div>
+                
+                <div class="problem-card" data-animate="fadeInUp" data-delay="200">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Dining/Voucher icon -->
+                            <rect x="8" y="12" width="32" height="24" rx="4" stroke="currentColor" stroke-width="2" fill="url(#voucherGradient)"/>
+                            <path d="M12 20H36M12 28H36" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="20" cy="24" r="2" fill="currentColor"/>
+                            <path d="M28 22H32M28 26H32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="voucherGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)" />
+                                    <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="problem-quote">"Use my vouchers for quality dining."</div>
+                </div>
+                
+                <div class="problem-card" data-animate="fadeInUp" data-delay="300">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Real Estate/Property icon -->
+                            <path d="M24 6L40 18V40H32V28H16V40H8V18L24 6Z" stroke="currentColor" stroke-width="2" fill="url(#propertyGradient)"/>
+                            <rect x="20" y="32" width="8" height="8" stroke="currentColor" stroke-width="1.5"/>
+                            <circle cx="28" cy="20" r="1.5" fill="currentColor"/>
+                            <defs>
+                                <linearGradient id="propertyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)" />
+                                    <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="problem-quote">"Find me an agent to sell my property."</div>
+                </div>
+                
+                <div class="problem-card" data-animate="fadeInUp" data-delay="400">
+                    <div class="problem-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Event/Ticket icon -->
+                            <rect x="8" y="16" width="32" height="16" rx="3" stroke="currentColor" stroke-width="2" fill="url(#eventGradient)"/>
+                            <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M16 12V20M32 12V20M16 28V36M32 28V36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="eventGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:rgba(255,255,255,0.1)" />
+                                    <stop offset="100%" style="stop-color:rgba(255,255,255,0.05)" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="problem-quote">"RSVP and secure my ticket to the event."</div>
+                </div>
+            </div>
+            
+            <div class="central-question-visual">
+                <div class="question-illustration">
+                    <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="40" cy="40" r="35" stroke="url(#questionGradient)" stroke-width="2" fill="rgba(255,255,255,0.05)"/>
+                        <path d="M32 28C32 24 35 20 40 20S48 24 48 28C48 32 44 34 42 38H38C38 32 42 30 42 28C42 26 41 24 40 24S38 26 38 28H32Z" fill="currentColor"/>
+                        <circle cx="40" cy="52" r="3" fill="currentColor"/>
+                        <defs>
+                            <linearGradient id="questionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgba(255,255,255,0.3)" />
+                                <stop offset="100%" style="stop-color:rgba(139,148,158,0.3)" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="question-content">
+                    <p class="large-text">Despite the hype surrounding generative AI and agentic models, the foundational question remains unanswered:</p>
+                    <blockquote class="central-quote">
+                        <h3>"Who are you, and can you be trusted?"</h3>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Tech Architecture Section -->
+    <section class="section bg-secondary" id="architecture" data-journey-color="green">
+        <div class="container">
+            <div class="section-header">
+                <h2>Introducing PrAIvacy: Trust Tech Architecture</h2>
+                <div class="divider"></div>
+            </div>
+            
+            
+            
+            <!-- Security Excellence Visual -->
+            <div class="security-excellence-visual">
+                <div class="security-image-container">
+                    <div class="image-container">
+                        <img src="../assets/images/About/Businessman using password cybersecurity and privacy concepts to protect data lock icon internet network security technology businessmen protecting personal data on laptop and virtual interfaces .jpg" alt="Enterprise Cybersecurity" class="section-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Enterprise-Grade Security</h3>
+                                <p>Multi-layered protection architecture</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="security-features-content">
+                    <h3>Trust Tech Security Foundation</h3>
+                    <p>Our architecture incorporates enterprise-grade security at every layer</p>
+                    <div class="security-features-grid">
+                        <div class="security-feature">
+                            <div class="feature-icon">🛡️</div>
+                            <div class="feature-text">
+                                <h4>Advanced Encryption</h4>
+                                <p>End-to-end protection</p>
+                            </div>
+                        </div>
+                        <div class="security-feature">
+                            <div class="feature-icon">🔐</div>
+                            <div class="feature-text">
+                                <h4>Zero-Trust Architecture</h4>
+                                <p>Verify every interaction</p>
+                            </div>
+                        </div>
+                        <div class="security-feature">
+                            <div class="feature-icon">🌐</div>
+                            <div class="feature-text">
+                                <h4>Global Compliance</h4>
+                                <p>GDPR, SOX, HIPAA ready</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Achievement Stats with Animation -->
+            <div class="achievement-showcase" data-animate="fadeInUp">
+                <div class="achievement-header">
+                    <h3>Five Years of Proven Excellence</h3>
+                    <p>Under five years, PrAIvacy has delivered comprehensive enterprise-grade applications across multiple sectors</p>
+                </div>
+                <div class="animated-stats">
+                    <div class="stat-card" data-animate="counter">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Enterprise Applications</div>
+                        <div class="stat-description">Full-fledged solutions</div>
+                    </div>
+                    <div class="stat-card" data-animate="counter" data-delay="200">
+                        <div class="stat-number" data-target="5">0</div>
+                        <div class="stat-label">Years of Innovation</div>
+                        <div class="stat-description">Continuous development</div>
+                    </div>
+                    <div class="stat-card" data-animate="counter" data-delay="400">
+                        <div class="stat-number" data-target="1000000" data-suffix="+">0</div>
+                        <div class="stat-label">Verified Users</div>
+                        <div class="stat-description">Trust network members</div>
+                    </div>
+                    <div class="stat-card" data-animate="counter" data-delay="600">
+                        <div class="stat-number" data-target="12">0</div>
+                        <div class="stat-label">Patents Filed</div>
+                        <div class="stat-description">Innovation protection</div>
+                    </div>
+                </div>
+                <div class="sectors-showcase">
+                    <div class="sector-tag">PropTech</div>
+                    <div class="sector-tag">FinTech</div>
+                    <div class="sector-tag">LegalTech</div>
+                    <div class="sector-tag">E-Commerce</div>
+                    <div class="sector-tag">Enterprise</div>
+                </div>
+            </div>
+            
+            <!-- Interactive Tech Stack -->
+            <div class="tech-stack-interactive" data-animate="fadeInUp">
+                <div class="tech-background-visual">
+                    <img src="../assets/images/About/e747d82e-aef6-46f1-af61-0167c1ba80ad.jpg" alt="AI Ecosystem" class="tech-bg-image">
+                    <div class="tech-bg-overlay"></div>
+                </div>
+                <div class="tech-header">
+                    <h3>Powered by Next-Generation Technology</h3>
+                    <p>Our Trust Tech Architecture is built on three foundational pillars</p>
+                </div>
+                <div class="tech-pillars-grid">
+                    <div class="tech-pillar-card" data-tech="ai">
+                        <div class="pillar-icon">
+                            <div class="icon-wrapper">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L13.09 8.26L20.18 9L13.09 9.74L12 16L10.91 9.74L3.82 9L10.91 8.26L12 2Z" fill="currentColor"/>
+                                    <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Artificial Intelligence</h4>
+                            <p>Advanced AI algorithms for trust scoring and behavioral analysis</p>
+                            <div class="pillar-features">
+                                <span class="feature-tag">Machine Learning</span>
+                                <span class="feature-tag">Trust Scoring</span>
+                                <span class="feature-tag">Pattern Recognition</span>
+                            </div>
+                        </div>
+                        <div class="pillar-bg-effect"></div>
+                    </div>
+                    
+                    <div class="tech-pillar-card" data-tech="data">
+                        <div class="pillar-icon">
+                            <div class="icon-wrapper">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="4" width="18" height="2" fill="currentColor"/>
+                                    <rect x="3" y="8" width="18" height="2" fill="currentColor"/>
+                                    <rect x="3" y="12" width="18" height="2" fill="currentColor"/>
+                                    <rect x="3" y="16" width="18" height="2" fill="currentColor"/>
+                                    <circle cx="7" cy="5" r="1" fill="currentColor" opacity="0.7"/>
+                                    <circle cx="7" cy="9" r="1" fill="currentColor" opacity="0.7"/>
+                                    <circle cx="7" cy="13" r="1" fill="currentColor" opacity="0.7"/>
+                                    <circle cx="7" cy="17" r="1" fill="currentColor" opacity="0.7"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Big Data Analytics</h4>
+                            <p>Real-time processing of vast data sets for trust verification</p>
+                            <div class="pillar-features">
+                                <span class="feature-tag">Real-time Processing</span>
+                                <span class="feature-tag">Data Mining</span>
+                                <span class="feature-tag">Predictive Analytics</span>
+                            </div>
+                        </div>
+                        <div class="pillar-bg-effect"></div>
+                    </div>
+                    
+                    <div class="tech-pillar-card" data-tech="blockchain">
+                        <div class="pillar-icon">
+                            <div class="icon-wrapper">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="3" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <rect x="15" y="3" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <rect x="9" y="15" width="6" height="6" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M9 6H15" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M12 9V15" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pillar-content">
+                            <h4>Blockchain Security</h4>
+                            <p>Immutable trust records and decentralized verification</p>
+                            <div class="pillar-features">
+                                <span class="feature-tag">Immutable Records</span>
+                                <span class="feature-tag">Decentralized</span>
+                                <span class="feature-tag">Cryptographic</span>
+                            </div>
+                        </div>
+                        <div class="pillar-bg-effect"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="emphasis-text">These platforms are designed around <em>real user needs</em>—not just tasks, but identity, credibility, and accountability.</p>
+        </div>
+    </section>
+
+    <!-- The Problem We Solve Section -->
+    <section class="section">
+        <div class="container">
+            <div class="problem-solve-header">
+                <div class="ai-system-comparison">
+                    <div class="current-ai-visual">
+                        <svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Current AI System -->
+                            <rect x="20" y="30" width="160" height="60" rx="8" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                            <text x="100" y="50" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="12" font-weight="bold">Current AI Systems</text>
+                            
+                            <!-- What & How arrows -->
+                            <path d="M50 70L50 90L70 90" stroke="#4ade80" stroke-width="2" fill="none" marker-end="url(#arrowGreen)"/>
+                            <text x="45" y="105" text-anchor="middle" fill="#4ade80" font-size="10" font-weight="bold">WHAT</text>
+                            
+                            <path d="M130 70L130 90L110 90" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arrowBlue)"/>
+                            <text x="135" y="105" text-anchor="middle" fill="#3b82f6" font-size="10" font-weight="bold">HOW</text>
+                            
+                            <!-- Missing WHO with X -->
+                            <circle cx="100" cy="15" r="12" fill="rgba(239,68,68,0.2)" stroke="#ef4444" stroke-width="2"/>
+                            <path d="M94 9L106 21M106 9L94 21" stroke="#ef4444" stroke-width="2"/>
+                            <text x="100" y="50" text-anchor="middle" fill="#ef4444" font-size="10" font-weight="bold">WHO?</text>
+                            
+                            <defs>
+                                <marker id="arrowGreen" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#4ade80"/>
+                                </marker>
+                                <marker id="arrowBlue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                                    <polygon points="0 0, 10 3.5, 0 7" fill="#3b82f6"/>
+                                </marker>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="problem-solve-content">
+                    <h2>The Problem We Solve</h2>
+                    <p>Most current AI systems focus on <strong>what you want to do</strong> and <strong>how to get it done</strong>. However, they fail to ask:</p>
+                </div>
+            </div>
+            
+            <div class="key-question-visual">
+                <div class="question-graphic">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Person silhouette with question -->
+                        <circle cx="50" cy="50" r="45" fill="url(#identityGradient)" opacity="0.3"/>
+                        <circle cx="50" cy="30" r="12" fill="rgba(255,255,255,0.8)"/>
+                        <path d="M30 85C30 70 38 60 50 60S70 70 70 85" fill="rgba(255,255,255,0.8)"/>
+                        <!-- Question mark overlay -->
+                        <circle cx="50" cy="50" r="20" fill="rgba(239,68,68,0.1)" stroke="#ef4444" stroke-width="2"/>
+                        <path d="M45 42C45 38 47 35 50 35S55 38 55 42C55 45 52 47 51 50H49C49 46 52 44 52 42C52 40 51 39 50 39S48 40 48 42H45Z" fill="#ef4444"/>
+                        <circle cx="50" cy="58" r="2" fill="#ef4444"/>
+                        
+                        <defs>
+                            <linearGradient id="identityGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:rgba(255,255,255,0.2)" />
+                                <stop offset="100%" style="stop-color:rgba(139,148,158,0.1)" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <blockquote class="key-question">
+                    <h3>"Who is making the request?"</h3>
+                </blockquote>
+            </div>
+            
+            <div class="identity-crisis-visual">
+                <div class="crisis-illustration">
+                    <div class="image-container crisis-image">
+                        <img src="../assets/images/About/87c45eb7-73ee-4cc0-94e7-7f230881e730.jpg" alt="Authentication Security Challenge" class="section-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Fragmented Authentication</h3>
+                                <p>Current systems rely on vulnerable login credentials</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="crisis-content">
+                    <h4>The Digital Identity Crisis</h4>
+                    <p>Our digital identities are fractured across different systems:</p>
+                    
+                    <div class="identity-fragments">
+                        <div class="fragment-item">
+                            <div class="fragment-icon government">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 4L28 10V18C28 22 24 26 16 28C8 26 4 22 4 18V10L16 4Z" fill="currentColor" opacity="0.2"/>
+                                    <path d="M16 4L28 10V18C28 22 24 26 16 28C8 26 4 22 4 18V10L16 4Z" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div class="fragment-text">
+                                <strong>Governments</strong><br/>
+                                <span>Regulation & Control</span>
+                            </div>
+                        </div>
+                        
+                        <div class="fragment-item">
+                            <div class="fragment-icon financial">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="8" width="24" height="16" rx="3" fill="currentColor" opacity="0.2"/>
+                                    <rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/>
+                                    <circle cx="12" cy="16" r="3" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div class="fragment-text">
+                                <strong>Financial Institutions</strong><br/>
+                                <span>Compliance & Verification</span>
+                            </div>
+                        </div>
+                        
+                        <div class="fragment-item warning">
+                            <div class="fragment-icon email">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="8" width="24" height="16" rx="2" fill="currentColor" opacity="0.2"/>
+                                    <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M4 8L16 16L28 8" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                            <div class="fragment-text">
+                                <strong>Emails & Phone Numbers</strong><br/>
+                                <span>Daily Life Interactions</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="warning-callout">
+                        <div class="warning-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L22 20H2L12 2Z" fill="currentColor" opacity="0.2"/>
+                                <path d="M12 2L22 20H2L12 2Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 9V13M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <p><strong>Critical Issue:</strong> These low-barrier identifiers are the breeding grounds for scams, fraud, and distrust.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Approach Section -->
+    <section class="section bg-secondary" id="solution" data-journey-color="purple">
+        <div class="container">
+            <div class="solution-header-visual">
+                <div class="governance-illustration">
+                    <div class="image-container">
+                        <img src="../assets/images/About/What happens to my Pinterest account upon death_….jpg" alt="Connected Trust Network" class="section-image">
+                        <div class="image-overlay">
+                            <div class="overlay-content">
+                                <h3>Trust Tech Architecture</h3>
+                                <p>Connected ecosystem of verified stakeholders</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="solution-header-content">
+                    <h2>Our Solution Approach</h2>
+                    <p>Building trust through stakeholder empowerment and strategic user engagement</p>
+                </div>
+            </div>
+            
+            <div class="approach-section">
+                <div class="governance-focus-card" data-animate="fadeInUp">
+                    <div class="governance-icon">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Target/Focus icon -->
+                            <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+                            <circle cx="32" cy="32" r="18" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"/>
+                            <circle cx="32" cy="32" r="8" fill="currentColor" opacity="0.8"/>
+                            <!-- Stakeholder arrows pointing in -->
+                            <path d="M8 32L18 32M46 32L54 32M32 8L32 18M32 46L32 54" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M14 28L18 32L14 36M50 28L46 32L50 36M28 14L32 18L36 14M28 50L32 46L36 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Empowering Relevant Stakeholders</h3>
+                    <p>At PrAIvacy, we focus on <strong>"empowering the relevant stakeholders"</strong>, which forms the foundation of governance.</p>
+                </div>
+                
+                <div class="strategy-visual-section">
+                    <div class="strategy-header">
+                        <h3>Soft Onboarding Strategy</h3>
+                        <p>Recognizing that few users would voluntarily participate in identity verification without immediate value, we reverse this paradigm:</p>
+                    </div>
+                    
+                    <div class="strategy-flow">
+                        <div class="strategy-step" data-animate="fadeInUp" data-delay="200">
+                            <div class="step-visual">
+                                <div class="step-number">1</div>
+                                <div class="step-icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Daily apps icon -->
+                                        <rect x="6" y="6" width="36" height="36" rx="8" fill="url(#dailyGradient)" stroke="currentColor" stroke-width="2"/>
+                                        <rect x="12" y="12" width="8" height="8" rx="2" fill="currentColor" opacity="0.7"/>
+                                        <rect x="28" y="12" width="8" height="8" rx="2" fill="currentColor" opacity="0.7"/>
+                                        <rect x="12" y="28" width="8" height="8" rx="2" fill="currentColor" opacity="0.7"/>
+                                        <rect x="28" y="28" width="8" height="8" rx="2" fill="currentColor" opacity="0.7"/>
+                                        <defs>
+                                            <linearGradient id="dailyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:rgba(59,130,246,0.2)" />
+                                                <stop offset="100%" style="stop-color:rgba(59,130,246,0.1)" />
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h4>Daily-Utility Applications</h4>
+                                <p>Provide essential services users need every day</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20L45 20M35 10L45 20L35 30" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="strategy-step biometric-step" data-animate="fadeInUp" data-delay="400">
+                            <div class="step-visual">
+                                <div class="step-number">2</div>
+                                <div class="biometric-showcase">
+                                    <div class="image-container step-image">
+                                        <img src="../assets/images/About/Your body = your bank! 💡✨ Biometric banking is….jpg" alt="Biometric Identity Verification" class="section-image">
+                                        <div class="image-overlay">
+                                            <div class="overlay-content">
+                                                <h3>Biometric Trust</h3>
+                                                <p>Your identity secured by you</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h4>Build Verified Identity</h4>
+                                <p>Gradually build trust and verified identity through biometric verification and usage patterns</p>
+                                <div class="biometric-features">
+                                    <span class="bio-tag">Fingerprint</span>
+                                    <span class="bio-tag">Facial Recognition</span>
+                                    <span class="bio-tag">Voice Pattern</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flow-arrow">
+                            <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20L45 20M35 10L45 20L35 30" stroke="rgba(255,255,255,0.4)" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        
+                        <div class="strategy-step" data-animate="fadeInUp" data-delay="600">
+                            <div class="step-visual">
+                                <div class="step-number">3</div>
+                                <div class="step-icon">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <!-- Network icon -->
+                                        <circle cx="24" cy="24" r="4" fill="currentColor"/>
+                                        <circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.7"/>
+                                        <circle cx="36" cy="12" r="3" fill="currentColor" opacity="0.7"/>
+                                        <circle cx="12" cy="36" r="3" fill="currentColor" opacity="0.7"/>
+                                        <circle cx="36" cy="36" r="3" fill="currentColor" opacity="0.7"/>
+                                        <path d="M15 15L21 21M33 15L27 21M15 33L21 27M33 33L27 27" stroke="currentColor" stroke-width="2"/>
+                                        <!-- Trust indicators -->
+                                        <circle cx="24" cy="8" r="2" fill="rgba(168,85,247,0.8)"/>
+                                        <circle cx="40" cy="24" r="2" fill="rgba(168,85,247,0.8)"/>
+                                        <circle cx="24" cy="40" r="2" fill="rgba(168,85,247,0.8)"/>
+                                        <circle cx="8" cy="24" r="2" fill="rgba(168,85,247,0.8)"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="step-content">
+                                <h4>Trust Network</h4>
+                                <p>Create a comprehensive trust network for all transactions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="section" id="vision" data-journey-color="orange">
+        <div class="container">
+            <div class="vision-section">
+                <h2>Our Vision</h2>
+                <div class="vision-content">
+                    <p class="vision-statement">To become the world's leading Trust Tech Architecture, enabling a digital ecosystem where identity, credibility, and accountability form the foundation of every interaction—making AI truly serve real-world needs through verified, trusted relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+                <a href="#press">Press</a>
+                <a href="#legal">Legal</a>
+                <a href="#security">Security</a>
+            </div>
+            <p>&copy; 2024 PrAIvacy Sdn. Bhd. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

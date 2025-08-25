@@ -44,6 +44,194 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Animated counter function
+    function animateCounter(element, target, suffix = '') {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            
+            if (target >= 1000000) {
+                element.textContent = (current / 1000000).toFixed(1) + 'M' + suffix;
+            } else if (target >= 1000) {
+                element.textContent = (current / 1000).toFixed(1) + 'K' + suffix;
+            } else {
+                element.textContent = Math.floor(current) + suffix;
+            }
+        }, 20);
+    }
+
+    // Intersection Observer for scroll-triggered animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+                
+                // Fade in animations
+                if (element.hasAttribute('data-animate')) {
+                    element.classList.add('animate');
+                }
+                
+                // Counter animations
+                if (element.hasAttribute('data-animate') && element.getAttribute('data-animate') === 'counter') {
+                    const delay = parseInt(element.getAttribute('data-delay')) || 0;
+                    
+                    setTimeout(() => {
+                        element.classList.add('counting');
+                        const numberElement = element.querySelector('.stat-number');
+                        const target = parseInt(numberElement.getAttribute('data-target'));
+                        const suffix = numberElement.getAttribute('data-suffix') || '';
+                        
+                        animateCounter(numberElement, target, suffix);
+                    }, delay);
+                }
+                
+                observer.unobserve(element);
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements with animation attributes
+    const animatedElements = document.querySelectorAll('[data-animate]');
+    animatedElements.forEach(el => observer.observe(el));
+
+    // Tech pillar cards interactive effects
+    const techCards = document.querySelectorAll('.tech-pillar-card');
+    techCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            const bgEffect = this.querySelector('.pillar-bg-effect');
+            if (bgEffect) {
+                bgEffect.style.opacity = '1';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            const bgEffect = this.querySelector('.pillar-bg-effect');
+            if (bgEffect) {
+                bgEffect.style.opacity = '0';
+            }
+        });
+    });
+
+    // Journey Line Animation - Colab Style
+    const journeyLine = document.querySelector('.journey-line');
+    const journeyProgress = document.getElementById('journeyProgress');
+    const journeyDots = document.querySelectorAll('.journey-dot');
+    const sections = document.querySelectorAll('section[data-journey-color]');
+
+    if (journeyLine && journeyProgress && sections.length > 0) {
+        let ticking = false;
+
+        function updateJourneyLine() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = Math.min(scrollTop / docHeight, 1);
+
+            // Update progress bar height
+            journeyProgress.style.height = `${scrollPercent * 100}%`;
+
+            // Find current section in viewport
+            let currentSection = null;
+            let maxVisibility = 0;
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const sectionTop = rect.top;
+                const sectionHeight = rect.height;
+                const viewportHeight = window.innerHeight;
+
+                // Calculate how much of the section is visible
+                let visibility = 0;
+                if (sectionTop <= viewportHeight && sectionTop + sectionHeight >= 0) {
+                    const visibleTop = Math.max(0, -sectionTop);
+                    const visibleBottom = Math.min(sectionHeight, viewportHeight - sectionTop);
+                    visibility = (visibleBottom - visibleTop) / Math.min(sectionHeight, viewportHeight);
+                }
+
+                if (visibility > maxVisibility) {
+                    maxVisibility = visibility;
+                    currentSection = section;
+                }
+            });
+
+            // Update active dot and progress color
+            if (currentSection) {
+                const color = currentSection.getAttribute('data-journey-color');
+                const sectionId = currentSection.getAttribute('id');
+
+                // Remove active class from all dots
+                journeyDots.forEach(dot => {
+                    dot.classList.remove('active');
+                });
+
+                // Add active class to current dot
+                const currentDot = document.querySelector(`.journey-dot[data-section="${sectionId}"]`);
+                if (currentDot) {
+                    currentDot.classList.add('active');
+                }
+
+                // Update progress bar color and glow
+                const colorMap = {
+                    'blue': '#3b82f6',
+                    'red': '#ef4444',
+                    'green': '#22c55e',
+                    'purple': '#a855f7',
+                    'orange': '#f97316'
+                };
+
+                if (colorMap[color]) {
+                    journeyProgress.style.boxShadow = `
+                        0 0 20px ${colorMap[color]}80,
+                        0 0 40px ${colorMap[color]}60
+                    `;
+                }
+            }
+
+            ticking = false;
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(updateJourneyLine);
+                ticking = true;
+            }
+        }
+
+        // Smooth scroll to section when dot is clicked
+        journeyDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                const sectionId = dot.getAttribute('data-section');
+                const targetSection = document.getElementById(sectionId);
+                
+                if (targetSection) {
+                    const navHeight = document.querySelector('nav').offsetHeight || 0;
+                    const targetPosition = targetSection.offsetTop - navHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Listen for scroll events
+        window.addEventListener('scroll', requestTick, { passive: true });
+        window.addEventListener('resize', requestTick, { passive: true });
+
+        // Initial update
+        updateJourneyLine();
+    }
+
     // Active navigation highlighting
     const sections = document.querySelectorAll('section[id]');
     const navItems = document.querySelectorAll('nav a[href^="#"]');
