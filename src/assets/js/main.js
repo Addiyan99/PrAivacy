@@ -233,13 +233,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Active navigation highlighting
-    const sections = document.querySelectorAll('section[id]');
+    const allSections = document.querySelectorAll('section[id]');
     const navItems = document.querySelectorAll('nav a[href^="#"]');
 
     function updateActiveNav() {
         const scrollPosition = window.scrollY + 100;
 
-        sections.forEach(section => {
+        allSections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
             const sectionId = section.getAttribute('id');
@@ -286,12 +286,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Enhanced Intersection Observer for scroll animations
-    const observerOptions = {
+    const enhancedObserverOptions = {
         threshold: 0.15,
         rootMargin: '0px 0px -80px 0px'
     };
 
-    const observer = new IntersectionObserver((entries) => {
+    const enhancedObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const element = entry.target;
@@ -311,10 +311,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         });
-    }, observerOptions);
+    }, enhancedObserverOptions);
 
     // Enhanced element selection for animations
-    const animatedElements = document.querySelectorAll(`
+    const enhancedAnimatedElements = document.querySelectorAll(`
         .section, 
         .card, 
         .timeline-item, 
@@ -325,12 +325,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .story-card
     `);
     
-    animatedElements.forEach((el, index) => {
+    enhancedAnimatedElements.forEach((el, index) => {
         // Set initial state for animation
         el.style.opacity = '0';
         el.style.transform = 'translateY(40px)';
         el.style.transition = 'all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-        observer.observe(el);
+        enhancedObserver.observe(el);
     });
 
     // Parallax effect for hero section
