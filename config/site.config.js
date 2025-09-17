@@ -2,7 +2,7 @@
 const siteConfig = {
     // Basic site information
     siteName: 'PrAIvacy',
-    siteDescription: 'Securing AI\'s Future - Professional AI Security Solutions',
+    siteDescription: 'Redefining AI for the Real World - World\'s first blockchain inspired Trust Tech Architecture',
     siteUrl: 'https://your-domain.com',
     
     // Company information
