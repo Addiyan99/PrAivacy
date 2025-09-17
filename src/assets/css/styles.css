@@ -1283,6 +1283,7 @@ nav {
     transition: max-height 0.3s ease, padding 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     visibility: hidden;
+    z-index: 999;
 }
 
 .mobile-menu.active {
@@ -4076,13 +4077,15 @@ footer {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .nav-links {
         display: none;
     }
 
     .mobile-menu-toggle {
         display: block;
+        z-index: 1001;
+        position: relative;
     }
 
     .hero {
@@ -4231,7 +4234,7 @@ footer {
 
 /* Additional mobile styles for smaller screens */
 /* Questions Showcase Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .questions-showcase {
         margin: 3rem 0;
     }
@@ -4262,7 +4265,7 @@ footer {
 }
 
 /* Fix mobile header overlap issue */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .hero {
         padding: 8rem 0 1.5rem 0 !important;
         min-height: 90vh;
@@ -4363,5 +4366,43 @@ footer {
     .achievement-showcase,
     .central-quote {
         margin-bottom: 2rem;
+    }
+}
+
+/* Enhanced Mobile Menu Visibility - Critical Fix */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: flex !important;
+        z-index: 1001 !important;
+        position: relative !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+    }
+
+    .mobile-menu {
+        z-index: 999 !important;
+    }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+    .nav-links {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: flex !important;
+        z-index: 1001 !important;
+        position: relative !important;
+        min-width: 48px !important;
+        min-height: 48px !important;
+    }
+
+    .mobile-menu {
+        z-index: 999 !important;
     }
 }
