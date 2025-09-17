@@ -18,7 +18,8 @@
       "Bash(rmdir:*)",
       "WebFetch(domain:www.colabsoftware.com)",
       "Bash(rm:*)",
-      "Bash(start index.html)"
+      "Bash(start index.html)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
