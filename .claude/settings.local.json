@@ -16,7 +16,8 @@
       "WebFetch(domain:www.raycast.com)",
       "Bash(true)",
       "Bash(rmdir:*)",
-      "WebFetch(domain:www.colabsoftware.com)"
+      "WebFetch(domain:www.colabsoftware.com)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }

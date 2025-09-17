@@ -322,7 +322,9 @@ document.addEventListener('DOMContentLoaded', function() {
         .award-card, 
         .support-notice,
         .impact-item,
-        .story-card
+        .story-card,
+        .question-item,
+        .questions-summary
     `);
     
     enhancedAnimatedElements.forEach((el, index) => {
