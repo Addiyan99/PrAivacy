@@ -1617,6 +1617,11 @@ nav {
     line-height: 1.6;
 }
 
+.questions-summary {
+    opacity: 1 !important;
+    transform: none !important;
+}
+
 .key-question-highlight {
     background: linear-gradient(135deg, 
         rgba(255, 255, 255, 0.1) 0%, 

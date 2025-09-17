@@ -323,8 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .support-notice,
         .impact-item,
         .story-card,
-        .question-bubble,
-        .questions-summary
+        .question-bubble
     `);
     
     enhancedAnimatedElements.forEach((el, index) => {
