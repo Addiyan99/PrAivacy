@@ -1388,13 +1388,163 @@ nav {
 
 /* Questions Showcase */
 .questions-showcase {
+    margin: 4rem 0;
+    max-width: 100%;
+    position: relative;
+}
+
+.question-bubble-container {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    margin: 4rem 0;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 1.5rem;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.question-bubble {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    animation: bubbleFadeIn 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    position: relative;
+}
+
+.question-bubble:nth-child(1) { animation-delay: 0.2s; margin-left: 0; margin-right: 30%; }
+.question-bubble:nth-child(2) { animation-delay: 0.4s; margin-left: 20%; margin-right: 0; }
+.question-bubble:nth-child(3) { animation-delay: 0.6s; margin-left: 5%; margin-right: 25%; }
+.question-bubble:nth-child(4) { animation-delay: 0.8s; margin-left: 25%; margin-right: 5%; }
+.question-bubble:nth-child(5) { animation-delay: 1.0s; margin-left: 15%; margin-right: 15%; }
+
+.left-bubble {
+    flex-direction: row;
+}
+
+.right-bubble {
+    flex-direction: row-reverse;
+}
+
+.center-bubble {
+    justify-content: center;
+}
+
+.bubble-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, 
+        rgba(99, 102, 241, 0.3) 0%, 
+        rgba(139, 92, 246, 0.3) 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.bubble-avatar::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    animation: avatarShine 3s ease-in-out infinite;
+}
+
+.bubble-content {
+    position: relative;
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.1) 0%, 
+        rgba(255, 255, 255, 0.05) 100%
+    );
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 1.2rem 1.8rem;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    max-width: 350px;
+    position: relative;
+}
+
+.bubble-text {
+    font-size: clamp(1rem, 2.2vw, 1.2rem);
+    color: var(--text-primary);
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+}
+
+.bubble-tail {
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-bubble .bubble-tail {
+    left: -8px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 12px solid rgba(255, 255, 255, 0.1);
+}
+
+.right-bubble .bubble-tail {
+    right: -8px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 12px solid rgba(255, 255, 255, 0.1);
+}
+
+.center-bubble .bubble-tail {
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-bubble:hover .bubble-content {
+    transform: translateY(-3px) scale(1.02);
+    background: linear-gradient(135deg, 
+        rgba(255, 255, 255, 0.15) 0%, 
+        rgba(255, 255, 255, 0.08) 100%
+    );
+    border-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.question-bubble:hover .bubble-avatar {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, 
+        rgba(99, 102, 241, 0.4) 0%, 
+        rgba(139, 92, 246, 0.4) 100%
+    );
+}
+
+/* New Bubble Animations */
+@keyframes bubbleFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes avatarShine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
 }
 
 .question-item {
@@ -1890,6 +2040,63 @@ nav {
     font-weight: 600;
 }
 
+.product-tagline {
+    margin-top: 1rem !important;
+    margin-bottom: 0 !important;
+    text-align: center;
+    position: relative;
+}
+
+.product-tagline em {
+    background: linear-gradient(135deg, 
+        rgba(99, 102, 241, 0.2) 0%, 
+        rgba(139, 92, 246, 0.2) 50%, 
+        rgba(59, 130, 246, 0.2) 100%
+    );
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-tagline em::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.1), 
+        transparent
+    );
+    transition: left 0.6s ease;
+}
+
+.product-card:hover .product-tagline em {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+    border-color: rgba(99, 102, 241, 0.5);
+    background: linear-gradient(135deg, 
+        rgba(99, 102, 241, 0.3) 0%, 
+        rgba(139, 92, 246, 0.3) 50%, 
+        rgba(59, 130, 246, 0.3) 100%
+    );
+}
+
+.product-card:hover .product-tagline em::before {
+    left: 100%;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .products-grid {
@@ -1942,6 +2149,11 @@ nav {
     
     .product-highlight {
         padding: 1.25rem 1.5rem;
+    }
+    
+    .product-tagline em {
+        padding: 0.65rem 1.35rem;
+        font-size: 0.9rem;
     }
     
     .learn-more-btn {
@@ -2015,6 +2227,12 @@ nav {
     .product-highlight p {
         font-size: 0.85rem;
         line-height: 1.5;
+    }
+    
+    .product-tagline em {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.85rem;
+        border-radius: 20px;
     }
 }
 
@@ -4010,45 +4228,74 @@ footer {
 /* Questions Showcase Responsive */
 @media (max-width: 900px) {
     .questions-showcase {
-        gap: 1.5rem;
         margin: 3rem 0;
     }
     
-    .question-item {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 1.5rem 2rem;
+    .question-bubble-container {
+        gap: 1.2rem;
     }
     
-    .question-number {
-        font-size: 1.2rem;
-        min-width: auto;
+    .question-bubble:nth-child(n) {
+        margin-left: 5% !important;
+        margin-right: 5% !important;
     }
     
-    .question-text {
-        font-size: clamp(1rem, 2.5vw, 1.2rem);
+    .bubble-content {
+        max-width: 280px;
+        padding: 1rem 1.4rem;
+    }
+    
+    .bubble-text {
+        font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+    }
+    
+    .bubble-avatar {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Fix mobile header overlap issue */
+@media (max-width: 900px) {
+    .hero {
+        padding: 8rem 0 1.5rem 0 !important;
+        min-height: 90vh;
+    }
+    
+    .main-title {
+        margin-top: 1rem;
     }
 }
 
 @media (max-width: 480px) {
     .questions-showcase {
-        gap: 1rem;
         margin: 2rem 0;
     }
     
-    .question-item {
-        padding: 1.25rem 1.5rem;
-        gap: 0.75rem;
+    .question-bubble-container {
+        gap: 1rem;
     }
     
-    .question-number {
-        font-size: 1rem;
+    .question-bubble:nth-child(n) {
+        margin-left: 2% !important;
+        margin-right: 2% !important;
     }
     
-    .question-text {
-        font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    .bubble-content {
+        max-width: 240px;
+        padding: 0.9rem 1.2rem;
+    }
+    
+    .bubble-text {
+        font-size: clamp(0.85rem, 2.8vw, 1rem);
         line-height: 1.3;
+    }
+    
+    .bubble-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
     }
     
     .questions-summary {
@@ -4062,6 +4309,11 @@ footer {
     
     .key-question-text {
         font-size: clamp(1.1rem, 2.8vw, 1.6rem);
+    }
+    
+    .hero {
+        padding: 7rem 0 1rem 0 !important;
+        min-height: 85vh;
     }
 }
 

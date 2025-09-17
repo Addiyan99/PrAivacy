@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .support-notice,
         .impact-item,
         .story-card,
-        .question-item,
+        .question-bubble,
         .questions-summary
     `);
     
