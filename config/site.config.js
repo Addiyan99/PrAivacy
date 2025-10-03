@@ -7,11 +7,11 @@ const siteConfig = {
     
     // Company information
     company: {
-        name: 'PrAIvacy Sdn. Bhd.',
+        name: 'Proppy Sdn. Bhd.',
         email: 'info@praivacy.com',
         phone: '+60-xxx-xxx-xxxx',
         address: 'Your Company Address',
-        founded: '2024'
+        founded: '2022'
     },
     
     // SEO settings

@@ -7,11 +7,11 @@
 2. Our products, and description in 1-2sentences.  
    e.g.  Cardle: Cardle is a digital business card..
 
-3. key Milestones
+ 
 
-4. Recognition & Awards (optional)
-5. Industry Certifications(optional)
-6. Corporate Governance(optional)
+3. Recognition & Awards (optional)
+4. Industry Certifications(optional)
+ 
    e.g. Board of Directors, Ethics & Compliance,Risk Management
-7. Investor Relation (optional , if any)
-8. Contact Us
+5. Investor Relation (optional , if any)
+6. Contact Us

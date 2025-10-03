@@ -19,7 +19,11 @@
       "WebFetch(domain:www.colabsoftware.com)",
       "Bash(rm:*)",
       "Bash(start index.html)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(for:*)",
+      "Bash(do sed -i 's/PrAIvacy Sdn\\. Bhd\\./Proppy Sdn. Bhd./g' \"$file\")",
+      "Bash(done)",
+      "WebFetch(domain:www.proppyapp.com)"
     ],
     "deny": []
   }
