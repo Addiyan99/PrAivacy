@@ -74,17 +74,21 @@
     .team-member-details {
         flex-grow: 1;
     }
-    .team-member-details h3 {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-    }
-    .team-member-details .member-title {
-        margin-bottom: 0.5rem;
-        font-weight: 600;
-    }
-    .team-member-details > p {
-        margin-top: 0;
+    .team-member-details .member-info {
+        margin: 0;
+        padding: 0;
+        text-align: left;
         line-height: 1.6;
+    }
+    .team-member-details .member-info.title {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    .team-member-details .member-info.name {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1.3rem;
     }
     .read-more-btn {
         background: var(--accent-gradient);
@@ -101,9 +105,14 @@
         margin-top: 1rem;
         padding-top: 1rem;
         border-top: 1px solid var(--border-primary);
+        text-align: justify;
     }
     .member-history.expanded {
         display: block;
+    }
+    .member-history p {
+        text-align: justify;
+        margin: 0 0 1rem 0;
     }
 </style>
 
@@ -114,9 +123,11 @@
             <img src="../assets/images/Team/team_tunku-2.png" alt="Y.A.M. TUNKU NAQUIYUDDIN IBNI TUANKU JA’FAR">
         </div>
         <div class="team-member-details">
-            <p class="member-title">CHAIRMAN</p>
-            <h3>Y.A.M. TUNKU NAQUIYUDDIN<br>IBNI TUANKU JA'FAR</h3>
-            <p>DK, DKYR, SPNS, SPMP, PPT<br>
+            <p class="member-info title">CHAIRMAN</p>
+            <p class="member-info"><br></p>
+            <p class="member-info name">Y.A.M. TUNKU NAQUIYUDDIN<br>IBNI TUANKU JA'FAR</p>
+            <p class="member-info"><br></p>
+            <p class="member-info">DK, DKYR, SPNS, SPMP, PPT<br>
             ORDRE NATIONAL DE LA LEGION D'HONNEUR (FRANCE)<br>
             GRAN CRUZ DE LA ORDEN BERNARDO O'HIGGINS (CHILE)<br>
             BSC ECONS. (HONS)<br>
