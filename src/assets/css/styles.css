@@ -2862,6 +2862,11 @@ nav {
     color: var(--text-primary);
 }
 
+.btn-icon svg {
+    width: 36px;
+    height: 36px;
+}
+
 .btn-text {
     display: flex;
     flex-direction: column;
