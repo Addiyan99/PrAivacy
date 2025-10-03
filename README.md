@@ -1,6 +1,6 @@
 # PrAIvacy - Securing AI's Future
 
-A professional corporate website for Proppy Sdn. Bhd., showcasing AI security solutions and privacy technologies.
+A professional corporate website for Proppy Sdn Bhd., showcasing AI security solutions and privacy technologies.
 
 ## 🚀 Quick Start
 
@@ -77,11 +77,11 @@ For production deployment:
 
 ## 📞 Contact
 
-**Proppy Sdn. Bhd.**
+**Proppy Sdn Bhd.**
 - Website: [Your website URL]
 - Email: [Contact email]
 - Address: [Company address]
 
 ## 📄 License
 
-© 5 Proppy Sdn. Bhd. All rights reserved.
+© 5 Proppy Sdn Bhd. All rights reserved.

@@ -23,7 +23,9 @@
       "Bash(for:*)",
       "Bash(do sed -i 's/PrAIvacy Sdn\\. Bhd\\./Proppy Sdn. Bhd./g' \"$file\")",
       "Bash(done)",
-      "WebFetch(domain:www.proppyapp.com)"
+      "WebFetch(domain:www.proppyapp.com)",
+      "Bash(find:*)",
+      "Bash(do sed -i 's/Sdn\\. Bhd/Sdn Bhd/g' \"$file\")"
     ],
     "deny": []
   }

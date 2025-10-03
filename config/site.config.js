@@ -7,7 +7,7 @@ const siteConfig = {
     
     // Company information
     company: {
-        name: 'Proppy Sdn. Bhd.',
+        name: 'Proppy Sdn Bhd.',
         email: 'info@praivacy.com',
         phone: '+60-xxx-xxx-xxxx',
         address: 'Your Company Address',
