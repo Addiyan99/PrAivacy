@@ -315,17 +315,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Enhanced element selection for animations
     const enhancedAnimatedElements = document.querySelectorAll(`
-        .section, 
-        .card, 
-        .timeline-item, 
-        .product-card, 
-        .award-card, 
+        .section:not(.team-page-section),
+        .card,
+        .timeline-item,
+        .product-card,
+        .award-card,
         .support-notice,
         .impact-item,
         .story-card,
         .question-bubble
     `);
-    
+
     enhancedAnimatedElements.forEach((el, index) => {
         // Set initial state for animation
         el.style.opacity = '0';
