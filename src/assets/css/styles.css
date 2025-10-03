@@ -129,8 +129,6 @@
     margin-top: 1rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border-primary);
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .member-history.expanded {
@@ -139,8 +137,9 @@
 
 .member-history p {
     text-align: justify;
-    text-justify: inter-word;
+    text-align-last: left;
     margin: 0 0 1rem 0;
+    line-height: 1.8;
 }
 
 .team-grid {
