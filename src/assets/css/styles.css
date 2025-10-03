@@ -70,6 +70,77 @@
     color: var(--text-primary);
 }
 
+/* Team Member Layout */
+.team-member-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.team-member-image {
+    flex-shrink: 0;
+    width: 250px;
+}
+
+.team-member-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.team-member-details {
+    flex-grow: 1;
+}
+
+.team-member-details .member-info {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.team-member-details .member-info.title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.team-member-details .member-info.name {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.read-more-btn {
+    background: var(--accent-gradient);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+}
+
+.member-history {
+    display: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-primary);
+    text-align: justify;
+}
+
+.member-history.expanded {
+    display: block;
+}
+
+.member-history p {
+    text-align: justify;
+    margin: 0 0 1rem 0;
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
