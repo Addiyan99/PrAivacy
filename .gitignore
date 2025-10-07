@@ -59,3 +59,26 @@ temp/
 
 # Local development
 .local/
+
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.pytest_cache/
+
+# Node/Web
+node_modules/
+dist/
+build/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+
+# App/local
+.claude/settings.local.json

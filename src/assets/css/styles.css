@@ -1428,6 +1428,7 @@ nav {
     transform: translate3d(0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    mix-blend-mode: screen;
 }
 
 .logo:hover {
@@ -1724,27 +1725,14 @@ nav {
     transform: translateY(-50%);
 }
 
-.left-bubble .bubble-tail {
-    left: -8px;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-right: 12px solid rgba(255, 255, 255, 0.1);
-}
-
-.right-bubble .bubble-tail {
-    right: -8px;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 12px solid rgba(255, 255, 255, 0.1);
-}
-
+/* All bubble tails point left */
+.left-bubble .bubble-tail,
+.right-bubble .bubble-tail,
 .center-bubble .bubble-tail {
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 12px solid rgba(255, 255, 255, 0.1);
+    left: -20px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 25px solid rgba(255, 255, 255, 0.12);
 }
 
 .question-bubble:hover .bubble-content {
