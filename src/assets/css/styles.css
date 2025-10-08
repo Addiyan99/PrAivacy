@@ -136,10 +136,11 @@
 }
 
 .member-history p {
-    text-align: justify;
-    text-align-last: left;
     margin: 0 0 1rem 0;
     line-height: 1.8;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    margin-left: unset !important;
 }
 
 .team-grid {
@@ -1395,7 +1396,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(10, 10, 10, 0.95);
+    background: #000000;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     z-index: 1000;
@@ -1419,7 +1420,7 @@ nav {
     max-width: 280px;
     object-fit: contain;
     transition: all 0.3s ease;
-    image-rendering: -webkit-optimize-contrast;
+    /* image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
     image-rendering: crisp-edges;
@@ -1428,7 +1429,7 @@ nav {
     transform: translate3d(0, 0, 0);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    mix-blend-mode: screen;
+    mix-blend-mode: screen; */
 }
 
 .logo:hover {
@@ -4245,7 +4246,7 @@ footer {
     display: inline-block;
     margin: 1rem auto 0;
     color: var(--text-secondary);
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }

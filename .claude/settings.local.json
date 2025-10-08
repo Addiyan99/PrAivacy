@@ -26,7 +26,8 @@
       "WebFetch(domain:www.proppyapp.com)",
       "Bash(find:*)",
       "Bash(do sed -i 's/Sdn\\. Bhd/Sdn Bhd/g' \"$file\")",
-      "Bash(command -v:*)"
+      "Bash(command -v:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }
