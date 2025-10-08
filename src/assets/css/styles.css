@@ -1407,11 +1407,13 @@ nav {
 
 .nav-container {
     max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -4350,6 +4352,15 @@ footer {
         position: relative;
     }
 
+    .logo {
+        max-width: 200px;
+        height: 75px;
+    }
+
+    .nav-container {
+        padding: 0 1rem;
+    }
+
     .hero {
         padding: 7rem 0 1.5rem 0;
         min-height: 90vh;
@@ -4445,6 +4456,11 @@ footer {
 
     .nav-container {
         padding: 0 1rem;
+    }
+
+    .logo {
+        max-width: 180px;
+        height: 70px;
     }
 
     .cards-grid {
