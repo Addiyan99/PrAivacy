@@ -277,6 +277,39 @@
     .mission-content h2 {
         font-size: 2rem;
     }
+
+    .team-member-layout {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .team-member-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .team-member-details {
+        width: 100%;
+    }
+
+    .member-info {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .member-info.name {
+        font-size: 1.3rem;
+    }
+
+    .member-info.title {
+        font-size: 1rem;
+    }
+
+    .member-history p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+    }
 }
 
 body {
@@ -1422,6 +1455,7 @@ nav {
     max-width: 280px;
     object-fit: contain;
     transition: all 0.3s ease;
+    margin-left: 0;
     /* image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
@@ -1489,7 +1523,8 @@ nav {
     min-height: 44px;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
+    margin-right: 0.5rem;
+    order: -1;
 }
 
 .mobile-menu-toggle:hover {

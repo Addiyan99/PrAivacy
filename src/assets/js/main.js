@@ -339,11 +339,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const scrolled = window.pageYOffset;
         const hero = document.querySelector('.hero');
         const heroContent = document.querySelector('.hero-content');
-        
+
         if (hero && heroContent) {
             // Subtle parallax effect
             heroContent.style.transform = `translateY(${scrolled * 0.1}px)`;
-            hero.style.opacity = Math.max(0, 1 - scrolled / window.innerHeight);
+            // Removed opacity fade-out effect to keep hero content visible
         }
     });
 
