@@ -1456,6 +1456,7 @@ nav {
     object-fit: contain;
     transition: all 0.3s ease;
     margin-left: 0;
+    flex-shrink: 1;
     /* image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
     image-rendering: pixelated;
@@ -1470,6 +1471,14 @@ nav {
 
 .logo:hover {
     transform: scale(1.02) translate3d(0, 0, 0);
+}
+
+.nav-container > a {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-shrink: 1;
 }
 
 .nav-links {
@@ -1515,6 +1524,7 @@ nav {
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0.8rem;
+    padding-right: 0.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
     touch-action: manipulation;
@@ -1523,8 +1533,9 @@ nav {
     min-height: 44px;
     align-items: center;
     justify-content: center;
-    margin-right: 0.5rem;
+    margin-right: 0;
     order: -1;
+    flex-shrink: 0;
 }
 
 .mobile-menu-toggle:hover {
