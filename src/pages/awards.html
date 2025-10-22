@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards & Recognition | PrAIvacy</title>
+    <meta name="description"
+        content="Celebrating ProppyApp's achievements and recognition in sustainable innovation, Trust-Tech leadership, and digital transformation.">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.jpg">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .section-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 5rem;
+        }
+
+        .awards-hero {
+            padding: 12rem 0 0 0;
+            text-align: center;
+
+            h1 {
+                padding: 40px 20px 0px 20px;
+                font-size: clamp(3rem, 8vw, 6.5rem);
+                font-weight: normal;
+                margin-bottom: 4rem;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+                color: var(--text-primary);
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+                position: relative;
+            }
+        }
+
+        .awards-intro {
+            max-width: 870px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+            line-height: 1.7;
+            color: var(--text-secondary);
+        }
+
+        .awards-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3rem;
+            max-width: min(900px, calc(100vw - 4rem));
+        }
+
+        .award-card {
+            background: linear-gradient(135deg,
+                    rgba(99, 102, 241, 0.05) 0%,
+                    rgba(168, 85, 247, 0.05) 100%),
+                var(--bg-card);
+            border: 1px solid rgba(99, 102, 241, 0.15);
+            border-radius: 24px;
+            padding: 3rem;
+            transition: all var(--duration-normal) ease;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .award-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            transform: scaleX(0);
+            transition: transform var(--duration-normal) ease;
+        }
+
+        .award-card:nth-child(2)::before {
+            background: linear-gradient(90deg, #06b6d4, #3b82f6);
+        }
+
+        .award-card:nth-child(3)::before {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899);
+        }
+
+        .award-card:nth-child(4)::before {
+            background: linear-gradient(90deg, #10b981, #06b6d4);
+        }
+
+        .award-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2),
+                0 0 0 1px rgba(99, 102, 241, 0.1);
+        }
+
+        .award-card:nth-child(2):hover {
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 20px 60px rgba(6, 182, 212, 0.2),
+                0 0 0 1px rgba(6, 182, 212, 0.1);
+        }
+
+        .award-card:nth-child(3):hover {
+            border-color: rgba(236, 72, 153, 0.4);
+            box-shadow: 0 20px 60px rgba(236, 72, 153, 0.2),
+                0 0 0 1px rgba(236, 72, 153, 0.1);
+        }
+
+        .award-card:nth-child(4):hover {
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 20px 60px rgba(16, 185, 129, 0.2),
+                0 0 0 1px rgba(16, 185, 129, 0.1);
+        }
+
+        .award-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .award-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            padding-top: 3rem;
+        }
+
+        .award-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 20px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2.5rem;
+            flex-shrink: 0;
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+            transition: all var(--duration-normal) ease;
+        }
+
+        .award-card:nth-child(2) .award-icon {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            box-shadow: 0 8px 24px rgba(6, 182, 212, 0.3);
+        }
+
+        .award-card:nth-child(3) .award-icon {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            box-shadow: 0 8px 24px rgba(236, 72, 153, 0.3);
+        }
+
+        .award-card:nth-child(4) .award-icon {
+            background: linear-gradient(135deg, #10b981, #06b6d4);
+            box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+        }
+
+        .award-card:hover .award-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .award-header-content {
+            flex: 1;
+        }
+
+        .award-title {
+            text-align: left;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin: 0 0 0.5rem 0;
+            line-height: 1.3;
+        }
+
+        .award-category {
+            font-size: 1rem;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .award-card:nth-child(2) .award-category {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .award-card:nth-child(3) .award-category {
+            background: linear-gradient(135deg, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .award-card:nth-child(4) .award-category {
+            background: linear-gradient(135deg, #10b981, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .award-organization {
+            font-size: 0.9rem;
+            color: var(--text-tertiary);
+            font-style: italic;
+        }
+
+        .award-description {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        .award-highlight {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 24px 24px 0 0;
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .award-card:nth-child(2) .award-highlight {
+            background: linear-gradient(135deg,
+                    rgba(6, 182, 212, 0.1) 0%,
+                    rgba(59, 130, 246, 0.1) 100%);
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .award-card:nth-child(3) .award-highlight {
+            background: linear-gradient(135deg,
+                    rgba(139, 92, 246, 0.1) 0%,
+                    rgba(236, 72, 153, 0.1) 100%);
+            border-color: rgba(236, 72, 153, 0.3);
+        }
+
+        .award-card:nth-child(4) .award-highlight {
+            background: linear-gradient(135deg,
+                    rgba(16, 185, 129, 0.1) 0%,
+                    rgba(6, 182, 212, 0.1) 100%);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .award-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg,
+                    rgba(99, 102, 241, 0.1) 0%,
+                    rgba(168, 85, 247, 0.1) 100%);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 20px;
+            padding: 0.75rem 1.5rem;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all var(--duration-normal) ease;
+            cursor: pointer;
+            justify-content: center;
+        }
+
+        .award-card:nth-child(2) .award-link {
+            background: linear-gradient(135deg,
+                    rgba(6, 182, 212, 0.1) 0%,
+                    rgba(59, 130, 246, 0.1) 100%);
+            border-color: rgba(6, 182, 212, 0.3);
+        }
+
+        .award-card:nth-child(3) .award-link {
+            background: linear-gradient(135deg,
+                    rgba(139, 92, 246, 0.1) 0%,
+                    rgba(236, 72, 153, 0.1) 100%);
+            border-color: rgba(236, 72, 153, 0.3);
+        }
+
+        .award-card:nth-child(4) .award-link {
+            background: linear-gradient(135deg,
+                    rgba(16, 185, 129, 0.1) 0%,
+                    rgba(6, 182, 212, 0.1) 100%);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .award-link:hover {
+            background: linear-gradient(135deg,
+                    rgba(99, 102, 241, 0.2) 0%,
+                    rgba(168, 85, 247, 0.2) 100%);
+            border-color: rgba(99, 102, 241, 0.5);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+
+        .award-card:nth-child(2) .award-link:hover {
+            background: linear-gradient(135deg,
+                    rgba(6, 182, 212, 0.2) 0%,
+                    rgba(59, 130, 246, 0.2) 100%);
+            border-color: rgba(6, 182, 212, 0.5);
+            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.2);
+        }
+
+        .award-card:nth-child(3) .award-link:hover {
+            background: linear-gradient(135deg,
+                    rgba(139, 92, 246, 0.2) 0%,
+                    rgba(236, 72, 153, 0.2) 100%);
+            border-color: rgba(236, 72, 153, 0.5);
+            box-shadow: 0 4px 12px rgba(236, 72, 153, 0.2);
+        }
+
+        .award-card:nth-child(4) .award-link:hover {
+            background: linear-gradient(135deg,
+                    rgba(16, 185, 129, 0.2) 0%,
+                    rgba(6, 182, 212, 0.2) 100%);
+            border-color: rgba(16, 185, 129, 0.5);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+        }
+
+        .award-link i {
+            transition: transform var(--duration-normal) ease;
+        }
+
+        .award-link:hover i {
+            transform: translateX(4px);
+        }
+
+        .award-link.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .awards-hero {
+                padding: 10rem 2rem 0rem 2rem;
+            }
+
+            .awards-grid {
+                gap: 2rem;
+            }
+
+            .award-card {
+                padding: 2rem;
+            }
+
+            .award-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .award-icon {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+
+            .award-title {
+                font-size: 1.5rem;
+                text-align: center;
+            }
+
+            .award-description {
+                font-size: 1rem;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="awards-hero">
+        <div>
+            <h1>
+                Awards &<br><b>Recognition</b>
+            </h1>
+            <p class="awards-intro">
+                Celebrating our achievements and recognition in sustainable innovation, Trust-Tech leadership, and
+                digital transformation. These accolades reflect our commitment to excellence and our mission to create
+                lasting value for people, communities, and the planet.
+            </p>
+        </div>
+    </section>
+
+    <!-- Awards Grid -->
+    <section class="section">
+        <div class="section-container">
+            <div id="awards-container" class="awards-grid">
+                <!-- Awards will be loaded here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright-text">&copy; 2025 Proppy Sdn Bhd | Registration No. 202001031063 (1387383-P)</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/neural-bg.js"></script>
+    <script src="../assets/js/navbar-loader.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Load and display awards
+        async function loadAwards() {
+            try {
+                const response = await fetch('../assets/data/awards.json');
+                const data = await response.json();
+                const container = document.getElementById('awards-container');
+
+                data.awards.forEach((award, index) => {
+                    const card = createAwardCard(award, index);
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error('Error loading awards:', error);
+                document.getElementById('awards-container').innerHTML =
+                    '<div style="text-align: center; color: var(--text-secondary);">Unable to load awards at this time.</div>';
+            }
+        }
+
+        function createAwardCard(award, index) {
+            const card = document.createElement('div');
+            card.className = 'award-card';
+            card.style.animationDelay = `${index * 0.2}s`;
+
+            const hasUrl = award.url && award.url.trim() !== '';
+
+            card.innerHTML = `
+                <div class="award-header">
+                    <div class="award-icon">
+                        <i class="${award.icon}"></i>
+                    </div>
+                    <div class="award-header-content">
+                        <div class="award-title">${award.title}</div>
+                        <div class="award-category">${award.category}</div>
+                        <div class="award-organization">${award.organization}</div>
+                    </div>
+                </div>
+
+                <div class="award-highlight">
+                    <i class="bi bi-star-fill" style="margin-right: 0.5rem;"></i>
+                    ${award.highlight}
+                </div>
+
+                <div class="award-description">
+                    ${award.description}
+                </div>
+
+                ${hasUrl ? `
+                    <a href="${award.url}" target="_blank" rel="noopener noreferrer" class="award-link">
+                        <span>Learn More</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                ` : `
+                    
+                `}
+            `;
+
+            return card;
+        }
+
+        // Load awards when page loads
+        document.addEventListener('DOMContentLoaded', loadAwards);
+    </script>
+</body>
+
+</html>
