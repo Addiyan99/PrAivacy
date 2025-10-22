@@ -1,0 +1,44 @@
+{
+    "awards": [
+        {
+            "id": 1,
+            "title": "Champions of Asia Pacific Sustainability 2025",
+            "category": "Sustainability Champion Award",
+            "organization": "SustNET at Asia Pacific Sustainability Conference & Awards",
+            "description": "This prestigious honour is based on the GPM P5 Standard for Sustainability in Project Management and aligns with the Sustainable Development Goals (SDGs). It highlights ProppyApp's unwavering commitment to sustainable innovation that generates lasting value for people, communities, and the planet.",
+            "highlight": "Sustainability Champion Award",
+            "url": "",
+            "icon": "bi-trophy"
+        },
+        {
+            "id": 2,
+            "title": "Hope Award – Innovative Leadership",
+            "category": "Trust Technology & Community Empowerment",
+            "organization": "Regional Recognition",
+            "description": "ProppyApp has been honoured for its leadership in developing Trust Technology solutions that foster transparency, good governance, and digital empowerment. This award celebrates the company's efforts to build ecosystems that strengthen organisations and communities through trusted digital interactions.",
+            "highlight": "Trust-Tech Innovation Leadership",
+            "url": "",
+            "icon": "bi-award"
+        },
+        {
+            "id": 3,
+            "title": "MDEC Recognition (Malaysia Digital Status)",
+            "category": "Malaysia Digital Company's Notable Use Cases",
+            "organization": "Malaysia Digital Economy Corporation (MDEC)",
+            "description": "ProppyApp® is formally acknowledged by the Malaysia Digital Economy Corporation (MDEC) as a vital catalyst for Malaysia's digital transformation journey. Our flagship solutions, Homes360 and Market360, are proudly featured in MDEC's Tech Navigator as notable use cases, exemplifying our role in driving innovation and empowerment.",
+            "highlight": "Official MDEC Recognition & Featured Use Cases",
+            "url": "https://mdec.my/md-tech-navigator/tech-use-cases/revolutionising-business--community-management-wit",
+            "icon": "bi-patch-check"
+        },
+        {
+            "id": 4,
+            "title": "Circular Business Association Membership",
+            "category": "Associate Member",
+            "organization": "Circular Business Association",
+            "description": "ProppyApp Sdn Bhd is proudly recognized as an associate member of the Circular Business Association, joining a community of forward-thinking organizations committed to advancing circular economy principles. This membership reflects our dedication to sustainable business practices and our role in driving the transition towards a more circular and regenerative economy.",
+            "highlight": "Committed to Circularity",
+            "url": "https://www.circularbusinessassociation.org/our-approved-community",
+            "icon": "bi-arrow-repeat"
+        }
+    ]
+}

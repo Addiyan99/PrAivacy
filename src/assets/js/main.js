@@ -1,14 +1,14 @@
 // prAIvacy Website JavaScript
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle
     const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
     const mobileMenu = document.querySelector('.mobile-menu');
-    
+
     if (mobileMenuToggle && mobileMenu) {
-        mobileMenuToggle.addEventListener('click', function() {
+        mobileMenuToggle.addEventListener('click', function () {
             mobileMenu.classList.toggle('active');
-            
+
             // Change hamburger icon to X when menu is open
             const icon = mobileMenuToggle.innerHTML;
             mobileMenuToggle.innerHTML = mobileMenu.classList.contains('active') ? '✕' : '☰';
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Close mobile menu when clicking on links
         const mobileLinks = mobileMenu.querySelectorAll('a');
         mobileLinks.forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 mobileMenu.classList.remove('active');
                 mobileMenuToggle.innerHTML = '☰';
             });
@@ -27,15 +27,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav a[href^="#"]');
     navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
-            
+
             if (targetElement) {
                 const navHeight = document.querySelector('nav').offsetHeight;
                 const targetPosition = targetElement.offsetTop - navHeight;
-                
+
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 current = target;
                 clearInterval(timer);
             }
-            
+
             if (target >= 1000000) {
                 element.textContent = (current / 1000000).toFixed(1) + 'M' + suffix;
             } else if (target >= 1000) {
@@ -75,26 +75,26 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const element = entry.target;
-                
+
                 // Fade in animations
                 if (element.hasAttribute('data-animate')) {
                     element.classList.add('animate');
                 }
-                
+
                 // Counter animations
                 if (element.hasAttribute('data-animate') && element.getAttribute('data-animate') === 'counter') {
                     const delay = parseInt(element.getAttribute('data-delay')) || 0;
-                    
+
                     setTimeout(() => {
                         element.classList.add('counting');
                         const numberElement = element.querySelector('.stat-number');
                         const target = parseInt(numberElement.getAttribute('data-target'));
                         const suffix = numberElement.getAttribute('data-suffix') || '';
-                        
+
                         animateCounter(numberElement, target, suffix);
                     }, delay);
                 }
-                
+
                 observer.unobserve(element);
             }
         });
@@ -107,14 +107,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Tech pillar cards interactive effects
     const techCards = document.querySelectorAll('.tech-pillar-card');
     techCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             const bgEffect = this.querySelector('.pillar-bg-effect');
             if (bgEffect) {
                 bgEffect.style.opacity = '1';
             }
         });
-        
-        card.addEventListener('mouseleave', function() {
+
+        card.addEventListener('mouseleave', function () {
             const bgEffect = this.querySelector('.pillar-bg-effect');
             if (bgEffect) {
                 bgEffect.style.opacity = '0';
@@ -211,11 +211,11 @@ document.addEventListener('DOMContentLoaded', function() {
             dot.addEventListener('click', () => {
                 const sectionId = dot.getAttribute('data-section');
                 const targetSection = document.getElementById(sectionId);
-                
+
                 if (targetSection) {
                     const navHeight = document.querySelector('nav').offsetHeight || 0;
                     const targetPosition = targetSection.offsetTop - navHeight;
-                    
+
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
@@ -262,8 +262,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroVideo = document.querySelector('.hero-video');
     if (heroVideo) {
         // Ensure video plays on mobile devices
-        heroVideo.addEventListener('canplaythrough', function() {
-            this.play().catch(function(error) {
+        heroVideo.addEventListener('canplaythrough', function () {
+            this.play().catch(function (error) {
                 console.log('Video autoplay failed:', error);
                 // Fallback: show a play button or mute the video and try again
                 this.muted = true;
@@ -295,14 +295,14 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const element = entry.target;
-                
+
                 // Add fade-in-up animation
                 element.classList.add('animate-fade-in-up');
                 element.style.opacity = '1';
                 element.style.transform = 'translateY(0)';
-                
+
                 // Stagger animation for grid items
-                if (element.parentElement.classList.contains('products-grid') || 
+                if (element.parentElement.classList.contains('products-grid') ||
                     element.parentElement.classList.contains('cards-grid') ||
                     element.parentElement.classList.contains('awards-grid')) {
                     const siblings = Array.from(element.parentElement.children);
@@ -318,7 +318,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .section:not(.team-page-section),
         .card,
         .timeline-item,
-        .product-card,
         .award-card,
         .support-notice,
         .impact-item,
@@ -342,7 +341,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (hero && heroContent) {
             // Subtle parallax effect
-            heroContent.style.transform = `translateY(${scrolled * 0.1}px)`;
+            // heroContent.style.transform = `translateY(${scrolled * 0.1}px)`;
             // Removed opacity fade-out effect to keep hero content visible
         }
     });
@@ -355,11 +354,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Custom cursor effect for cards (optional enhancement)
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
+        card.addEventListener('mouseenter', function () {
             this.style.transform = 'translateY(-8px) scale(1.02)';
         });
-        
-        card.addEventListener('mouseleave', function() {
+
+        card.addEventListener('mouseleave', function () {
             this.style.transform = 'translateY(0) scale(1)';
         });
     });
@@ -369,7 +368,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (heroTitle) {
         const originalText = heroTitle.textContent;
         let index = 0;
-        
+
         // Uncomment below for typing effect
         /*
         heroTitle.textContent = '';
@@ -389,7 +388,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form handling (if contact forms are added later)
     const forms = document.querySelectorAll('form');
     forms.forEach(form => {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', function (e) {
             e.preventDefault();
             // Add form submission logic here
             console.log('Form submitted');
@@ -398,28 +397,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Product Cards with Learn More buttons
     const productCards = document.querySelectorAll('.product-card');
-    
+
     productCards.forEach(card => {
         const learnMoreBtn = card.querySelector('.learn-more-btn');
-        
+
         if (!learnMoreBtn) return;
-        
+
         // Add accessibility attributes
         const productName = card.querySelector('h3').textContent;
         learnMoreBtn.setAttribute('aria-label', `Learn more about ${productName}`);
-        
+
         // Add smooth hover animation for the whole card when hovering learn more button
-        learnMoreBtn.addEventListener('mouseenter', function() {
+        learnMoreBtn.addEventListener('mouseenter', function () {
             card.style.transform = 'translateY(-8px)';
         });
-        
-        learnMoreBtn.addEventListener('mouseleave', function() {
+
+        learnMoreBtn.addEventListener('mouseleave', function () {
             card.style.transform = 'translateY(-5px)';
         });
     });
 
     // Global keyboard navigation support
-    document.addEventListener('keydown', function(e) {
+    document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape') {
             // Close mobile menu
             if (mobileMenu) {
@@ -428,7 +427,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     mobileMenuToggle.innerHTML = '☰';
                 }
             }
-            
+
             // Reset any transformed product cards
             const productCards = document.querySelectorAll('.product-card');
             productCards.forEach(card => {
@@ -441,7 +440,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const timeline = document.querySelector('.timeline');
     const timelineProgress = document.querySelector('.timeline-progress');
     const timelineItems = document.querySelectorAll('.timeline-item');
-    
+
     if (timeline && timelineProgress && timelineItems.length > 0) {
         function updateTimeline() {
             const timelineRect = timeline.getBoundingClientRect();
@@ -449,27 +448,27 @@ document.addEventListener('DOMContentLoaded', function() {
             const timelineHeight = timeline.offsetHeight;
             const scrollTop = window.pageYOffset;
             const windowHeight = window.innerHeight;
-            
+
             // Calculate how much of the timeline is visible
             const timelineStart = timelineTop - windowHeight * 0.8;
             const timelineEnd = timelineTop + timelineHeight - windowHeight * 0.2;
-            
+
             if (scrollTop >= timelineStart && scrollTop <= timelineEnd) {
                 // Calculate progress percentage
                 const progress = Math.min(Math.max((scrollTop - timelineStart) / (timelineEnd - timelineStart), 0), 1);
                 timelineProgress.style.height = `${progress * 100}%`;
-                
+
                 // Update active timeline items
                 timelineItems.forEach((item, index) => {
                     const itemRect = item.getBoundingClientRect();
                     const itemTop = itemRect.top + window.pageYOffset;
                     const itemCenter = itemTop + (item.offsetHeight / 2);
                     const viewportCenter = scrollTop + (windowHeight / 2);
-                    
+
                     // Check if item is in the active zone (center of viewport)
                     const activeZone = windowHeight * 0.3; // 30% of viewport height
                     const isActive = Math.abs(itemCenter - viewportCenter) < activeZone;
-                    
+
                     if (isActive) {
                         item.classList.add('active');
                     } else {
@@ -488,10 +487,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             }
         }
-        
+
         // Add scroll listener for timeline
         window.addEventListener('scroll', updateTimeline);
-        
+
         // Initial call
         updateTimeline();
     }
