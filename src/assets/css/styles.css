@@ -87,6 +87,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden !important;
 }
 
 .d-flex {
@@ -468,7 +469,6 @@ nav {
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0.8rem;
-    padding-right: 0.5rem;
     border-radius: 8px;
     transition: all 0.3s ease;
     touch-action: manipulation;
@@ -3438,6 +3438,8 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    /* Main Page */
     .section {
         padding: 4rem 0;
         padding-left: 2rem;
@@ -3477,13 +3479,18 @@ footer {
         }
     }
 
-    .layer-two::before,
+    .layer-two::before {
+        left: -109px;
+        width: 10px;
+    }
+
     .layer-one::after {
-        display: none;
+        right: -109px;
+        width: 10px;
     }
 
     .question-item {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .burger-layer {
@@ -3547,7 +3554,11 @@ footer {
     }
 
     .final-solution {
-        padding: 1.5rem;
+        padding: 5rem 1.5rem 1rem;
+
+        .final-solution-icon-container {
+            width: calc(100% - 2rem);
+        }
     }
 
     .key-quote {
@@ -3559,7 +3570,12 @@ footer {
         padding-right: 2rem;
     }
 
+    /* Team Page */
     .teams-hero {
         padding: 10rem 2rem 0rem 2rem;
+    }
+
+    .team-member-layout {
+        flex-direction: column;
     }
 }
