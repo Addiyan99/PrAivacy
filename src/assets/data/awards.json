@@ -8,7 +8,11 @@
             "description": "This prestigious honour is based on the GPM P5 Standard for Sustainability in Project Management and aligns with the Sustainable Development Goals (SDGs). It highlights ProppyApp's unwavering commitment to sustainable innovation that generates lasting value for people, communities, and the planet.",
             "highlight": "Sustainability Champion Award",
             "url": "",
-            "icon": "bi-trophy"
+            "icon": "bi-trophy",
+            "partners": [
+                "../assets/images/Awards/aps.png",
+                "../assets/images/Awards/sustnet.png"
+            ]
         },
         {
             "id": 2,
@@ -18,7 +22,10 @@
             "description": "ProppyApp has been honoured for its leadership in developing Trust Technology solutions that foster transparency, good governance, and digital empowerment. This award celebrates the company's efforts to build ecosystems that strengthen organisations and communities through trusted digital interactions.",
             "highlight": "Trust-Tech Innovation Leadership",
             "url": "",
-            "icon": "bi-award"
+            "icon": "bi-award",
+            "partners": [
+                "../assets/images/Awards/hope.png"
+            ]
         },
         {
             "id": 3,
@@ -28,7 +35,10 @@
             "description": "ProppyApp® is formally acknowledged by the Malaysia Digital Economy Corporation (MDEC) as a vital catalyst for Malaysia's digital transformation journey. Our flagship solutions, Homes360 and Market360, are proudly featured in MDEC's Tech Navigator as notable use cases, exemplifying our role in driving innovation and empowerment.",
             "highlight": "Official MDEC Recognition & Featured Use Cases",
             "url": "https://mdec.my/md-tech-navigator/tech-use-cases/revolutionising-business--community-management-wit",
-            "icon": "bi-patch-check"
+            "icon": "bi-patch-check",
+            "partners": [
+                "../assets/images/Awards/mdec.png"
+            ]
         },
         {
             "id": 4,
@@ -38,7 +48,75 @@
             "description": "ProppyApp Sdn Bhd is proudly recognized as an associate member of the Circular Business Association, joining a community of forward-thinking organizations committed to advancing circular economy principles. This membership reflects our dedication to sustainable business practices and our role in driving the transition towards a more circular and regenerative economy.",
             "highlight": "Committed to Circularity",
             "url": "https://www.circularbusinessassociation.org/our-approved-community",
-            "icon": "bi-arrow-repeat"
+            "icon": "bi-arrow-repeat",
+            "partners": [
+                "../assets/images/Awards/cbass.png"
+            ]
+        }
+    ],
+    "news": [
+        {
+            "id": 1,
+            "date": "2025-09-20",
+            "source": "LinkedIn",
+            "title": "ProppyApp's participation in Smart City Expo Kuala Lumpur 2025",
+            "url": "https://www.linkedin.com/posts/yikyee_circulareconomy-sustainability-scekl25-activity-7374856639725805568-CKJz"
+        },
+        {
+            "id": 2,
+            "date": "2025-07-26",
+            "source": "LinkedIn",
+            "title": "ProppyApp has now been upgraded to an Associate Member of Circular Business Association",
+            "url": "https://www.linkedin.com/posts/proppyapp_one-of-our-cbass-approved-communities-proppyapp-activity-7354929189969432576-n7KY/"
+        },
+        {
+            "id": 3,
+            "date": "2025-07-26",
+            "source": "LinkedIn",
+            "title": "ProppyApp joins CBASS as Associate Member",
+            "url": "https://www.linkedin.com/posts/circular-business-association_one-of-our-cbass-approved-communities-proppyapp-activity-7354846719605370880-cqOA/"
+        },
+        {
+            "id": 4,
+            "date": "2025-04-15",
+            "source": "MDEC",
+            "title": "Revolutionising Business & Community Management with ProppyApp®, a cutting-edge OMNI app, creating an intricately designed ecosystem where users are seamlessly connected to almost everything",
+            "url": "https://mdec.my/md-tech-navigator/tech-use-cases/revolutionising-business--community-management-wit"
+        },
+        {
+            "id": 5,
+            "date": "2024-03-27",
+            "source": "BusinessToday",
+            "title": "Allianz Extends Services To Property Buyers In New Collaboration",
+            "url": "https://www.businesstoday.com.my/2024/03/27/allianz-extends-services-to-property-buyers-in-new-collaboration/"
+        },
+        {
+            "id": 6,
+            "date": "2024-03-27",
+            "source": "New Straits Times",
+            "title": "Allianz, ProppyApp sign MOU to increase accessibility of insurance products",
+            "url": "https://www.nst.com.my/business/corporate/2024/03/1031543/allianz-proppyapp-sign-mou-increase-accessibility-insurance"
+        },
+        {
+            "id": 7,
+            "date": "2022-01-28",
+            "source": "New Straits Times",
+            "title": "#TECH: ProppyApp enhances user experience with new features",
+            "url": "https://www.nst.com.my/lifestyle/bots/2022/01/766918/tech-proppyapp-enhances-user-experience-new-features"
+        },
+        {
+            "id": 8,
+            "date": "2021-10-13",
+            "source": "The Star",
+            "title": "ProppyApp plans to expand into Southeast Asia with over RM10mil funding",
+            "url": "https://www.thestar.com.my/business/business-news/2021/10/13/proppyapp-plans-to-expand-into-southeast-asia-with-over-rm10mil-funding"
+        },
+        {
+            "id": 9,
+            "date": "2021-09-20",
+            "source": "New Straits Times",
+            "title": "#TECH: Reviving neighbourhood economy",
+            "url": "https://www.nst.com.my/lifestyle/bots/2021/09/728902/tech-reviving-neighbourhood-economy"
         }
     ]
 }
