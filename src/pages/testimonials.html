@@ -450,15 +450,20 @@
             // Get initials for avatar
             const initials = testimonial.name.split(' ').map(n => n[0]).join('').substring(0, 2);
 
+            // Check if testimonial has an image
+            const avatarContent = testimonial.image
+                ? `<img src="${testimonial.image}" alt="${testimonial.name}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">`
+                : initials;
+
             card.innerHTML = `
                 <i class="bi bi-quote quote-icon"></i>
-                
+
                 <div class="testimonial-quote">
                     ${testimonial.quote}
                 </div>
 
                 <div class="testimonial-author">
-                    <div class="author-avatar">${initials}</div>
+                    <div class="author-avatar">${avatarContent}</div>
                     <div class="author-info">
                         <h3>${testimonial.name}</h3>
                         <div class="author-title">${testimonial.title}</div>

@@ -27,7 +27,8 @@
       "Bash(find:*)",
       "Bash(do sed -i 's/Sdn\\. Bhd/Sdn Bhd/g' \"$file\")",
       "Bash(command -v:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }
