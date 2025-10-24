@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Enhanced element selection for animations
     const enhancedAnimatedElements = document.querySelectorAll(`
-        .section:not(.team-page-section),
+        .section:not(.no-section-anim),
         .card,
         .timeline-item,
         .award-card,
