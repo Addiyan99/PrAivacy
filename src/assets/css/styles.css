@@ -3213,11 +3213,12 @@ nav {
 }
 
 .app-download-content h2 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--text-primary);
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.app-download-content h2 span {
+    display: block;
 }
 
 .app-download-logo {
