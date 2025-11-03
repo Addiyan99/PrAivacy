@@ -607,7 +607,7 @@ nav {
     padding: 40px 20px 0px 20px;
     font-size: clamp(3rem, 8vw, 6.5rem);
     font-weight: normal;
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
     line-height: 1.1;
     letter-spacing: -0.02em;
     color: var(--text-primary);
@@ -646,7 +646,7 @@ nav {
 
 /* Questions Showcase */
 .questions-showcase {
-    padding: 0 0 4rem 0;
+    padding: 3rem 0 4rem 0;
     max-width: 100%;
     position: relative;
     background-image: url(../assets/images/globe.png);
@@ -657,10 +657,18 @@ nav {
     background-color: var(--bg-primary);
 }
 
-.backdrop-gradient {
+.backdrop-gradient-bottom {
     background: linear-gradient(0deg, var(--bg-primary) 20%, rgb(255 255 255 / 0%) 100%);
     position: absolute;
     bottom: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.backdrop-gradient-top {
+    background: linear-gradient(180deg, var(--bg-primary) 20%, rgb(255 255 255 / 0%) 100%);
+    position: absolute;
+    top: 0px;
     height: 100px;
     width: 100%;
 }
