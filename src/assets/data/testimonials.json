@@ -89,6 +89,24 @@
       "quote": "ProppyApp is an outstanding super app that unites the entire property supply chain and related services. I believe it will continue to grow and make a positive impact on both society and the property industry.",
       "bio": "Datuk Loo Chee Wee is a respected leader in the property industry with Sin Hee Yang Property Group.",
       "image": "../assets/images/Testimonials/Datuk Loo Chee Wee.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Er Yuk Bee",
+      "title": "Director",
+      "company": "Aplus Software Sdn Bhd",
+      "quote": "I joined ProppyApp as a Merchant in 2021, when it first introduced the 'Neighbourhood Economy' concept that empowers inclusive digital economies. The evolution into Market360 has been transformative, expanding beyond property into a digital commerce ecosystem. My clients now place orders effortlessly, with transparent pricing and instant transactions that save time and boost sales. Market360 has eliminated manual quotations and streamlined operations, making it far easier to close deals. It's a game-changer for my business.",
+      "bio": "Er Yuk Bee is the Director of Aplus Software Sdn Bhd, a well-established Malaysian company specialising in business management software designed to help small and medium-sized enterprises streamline their accounting, payroll, and operations for over 30 years. With a strong focus on e-invoicing and digital transformation, she is committed to enabling businesses to improve efficiency and maintain compliance through innovative technology solutions.",
+      "image": "../assets/images/Testimonials/Er Yuk Bee.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Lee Kok Heng",
+      "title": "Director & Founder",
+      "company": "Proto Interior (M) Holding Sdn Bhd",
+      "quote": "With 18 years in the interior fit-out industry, we have experienced many business ups and downs, especially during the pandemic in 2020. In 2021, I was introduced to ProppyApp, and I quickly saw its potential to help businesses like ours go digital. The platform offers powerful tools such as product promotion, customer ratings, endorsements, and digital vouchers, all in one place. ProppyApp continues to innovate with solutions that meet government requirements, including e-invoicing, payment gateways, and accounting integration. It has truly simplified how we manage and grow our business. We are thankful to ProppyApp for creating such an amazing platform that helped us stay resilient and connected through challenging times.",
+      "bio": "Lee Kok Heng is the Director & Founder of Proto Interior (M) Holding Sdn Bhd, with 18 years of experience in the interior fit-out industry.",
+      "image": "../assets/images/Testimonials/Lee Kok Heng.jpg"
     }
   ]
 }
