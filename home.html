@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrAIvacy - Redefining AI for the Real World</title>
+    <meta name="description"
+        content="Redefining AI for the Real World - World's first blockchain inspired Trust Tech Architecture. 8 comprehensive applications across proptech, fintech, legaltech, and e-commerce built on PrAIvacy Trust Tech.">
+    <link rel="icon" type="image/svg+xml" href="../src/assets/images/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../src/assets/css/styles.css">
+</head>
+
+<body>
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="main-title"><b>Redefining AI</b><br>for the Real World</h1>
+
+            <div class="questions-showcase" style="background-image: url(../src/assets/images/hero/globe.png);">
+                <div class="backdrop-gradient-bottom"></div>
+                <div class="backdrop-gradient-top"></div>
+
+                <div class="question-bubble-container">
+                    <div class="question-bubble left-bubble">
+                        <img src="../src/assets/images/users/user1.png" alt="User 1" class="bubble-avatar">
+                        <div class="bubble-content">
+                            <div class="bubble-text">"Can I trust this business or person?"</div>
+                            <div class="bubble-tail"></div>
+                        </div>
+                    </div>
+
+                    <div class="question-bubble right-bubble">
+                        <div class="bubble-content">
+                            <div class="bubble-text">"Please arrange my visitor access and parking."</div>
+                            <div class="bubble-tail"></div>
+                        </div>
+                        <img src="../src/assets/images/users/user2.png" alt="User 2" class="bubble-avatar">
+                    </div>
+
+                    <div class="question-bubble left-bubble">
+                        <img src="../src/assets/images/users/user3.png" alt="User 3" class="bubble-avatar">
+                        <div class="bubble-content">
+                            <div class="bubble-text">"Use my vouchers for quality dining."</div>
+                            <div class="bubble-tail"></div>
+                        </div>
+                    </div>
+
+                    <div class="question-bubble right-bubble">
+                        <div class="bubble-content">
+                            <div class="bubble-text">"Find me an agent to sell my property."</div>
+                            <div class="bubble-tail"></div>
+                        </div>
+                        <img src="../src/assets/images/users/user4.png" alt="User 4" class="bubble-avatar">
+                    </div>
+
+                    <div class="question-bubble left-bubble">
+                        <img src="../src/assets/images/users/user5.png" alt="User 5" class="bubble-avatar">
+                        <div class="bubble-content">
+                            <div class="bubble-text">"RSVP and secure my ticket to the event."</div>
+                            <div class="bubble-tail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions-summary">
+                <p class="summary-text">At PrAIvacy we construct a blockchain inspired and AI powered “Open
+                    Infrastructure” for enterprise and consumer solutions to be built on, including but not limited to
+                    Fintech, Proptech, LegalTech, O2O eCommerce</p>
+                <p class="summary-text">Leveraging on the common platform for legitimate users, eventually enabling
+                    the quantification of TRUST, the very foundation of human relationships.</p>
+                <p class="summary-text">These are practical, real-life requests that today's mainstream AI systems
+                    simply cannot fulfil. Despite the hype surrounding generative AI and agentic models, the
+                    foundational question remains unanswered:</p>
+                <div class="key-question-container">
+                    <img src="../src/assets/images/misc/quotes.png" class="quote open">
+                    <div class="key-question-highlight">
+                        <span class="key-question-text"><b>Who are you</b>, can you be trusted?</span>
+                    </div>
+                    <img src="../src/assets/images/misc/quotes.png" class="quote closed">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="scroll-indicator">
+            <div class="scroll-dot"></div>
+            <div class="scroll-text">Scroll to explore</div>
+        </div> -->
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="section">
+        <h2><b>Introducing PrAIvacy:</b><br>Trust Tech Architecture</h2>
+        <p class="section-subtitle">
+            Welcome to the next trillion-dollar tech revolution
+            <br>
+            where trust is not assumed, but engineered.
+        </p>
+
+        <div class="trust-tech-visual">
+            <div class="trust-animation">
+                <div class="trust-layers">
+                    <div class="trust-layer layer-one" data-layer="ai">
+                        <div class="layer-icon"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                                fill="deepskyblue" class="bi bi-cpu" viewBox="0 0 16 16">
+                                <path
+                                    d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                            </svg>
+                        </div>
+                        <div class="layer-label">AI Agents</div>
+                    </div>
+                    <div class="layer-status missing">Missing</div>
+                    <div class="trust-layer layer-two" data-layer="trust">
+                        <div class="layer-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="darkorange"
+                                class="bi bi-shield-exclamation" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                                <path
+                                    d="M7.001 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.553.553 0 0 1-1.1 0z" />
+                            </svg>
+                        </div>
+                        <div class="layer-label">Trust Layer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="fade-in-text" data-delay="0">While the world races to develop ever-more complex AI agents, the
+            foundational layer-trust-remains neglected.</p>
+
+        <div class="praivacy-solution-container">
+            <div class="trust-layer">
+                <img src="../src/assets/images/logo/praivacy_transparent_shadow.png" class="praivacy-solution">
+                <div class="layer-status solution">Solution</div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="intro-text-animated">
+                <p class="fade-in-text" data-delay="1000">PrAIvacy introduces the world's first blockchain inspired
+                    Trust Tech Architecture - a breakthrough infrastructure built to quantify trust as the core enabler
+                    of
+                    relationships and transactions.</p>
+
+                <div class="achievement-stats fade-in-text" data-delay="2000">
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Applications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Industries</div>
+                    </div>
+                </div>
+
+                <p class="fade-in-text highlight-text" data-delay="3000">Powered by AI, Big Data, and Blockchain, these
+                    platforms are designed around real user needs-not just tasks, but identity, credibility, and
+                    accountability.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem We Solve Section -->
+    <section class="section">
+        <h2>The Problem <b>We Solve</b></h2>
+
+        <div class="problem-visual">
+            <div class="ai-focus-diagram">
+                <div class="ai-current">
+                    <div class="ai-box">
+                        <div class="ai-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="deepskyblue"
+                                class="bi bi-cpu" viewBox="0 0 16 16">
+                                <path
+                                    d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                            </svg>
+                            <div class="ai-label">Current AI</div>
+                        </div>
+                        <div class="ai-questions">
+                            <div class="question-item active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                                <span>What?</span>
+                            </div>
+                            <div class="question-item active">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                                </svg>
+                                <span>How?</span>
+                            </div>
+                            <div class="question-item missing">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                                    class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Who?</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="missing-question">
+                    <div class="question-arrow">➤</div>
+                    <div class="key-question-visual">"Who is making the request?"</div>
+                </div> -->
+            </div>
+        </div>
+
+        <p class="fade-in-text">Our digital identities are fractured-managed by governments for regulation,
+            financial institutions for compliance, but in daily life, reduced to emails and phone numbers. These
+            low-barrier identifiers are the breeding grounds for scams, fraud, and distrust.</p>
+
+        <div class="problem-content">
+            <div class="identity-fracture-visual">
+                <div class="identity-sources">
+                    <div class="identity-source" data-type="government">
+                        <div class="source-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-buildings" viewBox="0 0 16 16">
+                                <path
+                                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022M6 8.694 1 10.36V15h5zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5z" />
+                                <path
+                                    d="M2 11h1v1H2zm2 0h1v1H4zm-2 2h1v1H2zm2 0h1v1H4zm4-4h1v1H8zm2 0h1v1h-1zm-2 2h1v1H8zm2 0h1v1h-1zm2-2h1v1h-1zm0 2h1v1h-1zM8 7h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zM8 5h1v1H8zm2 0h1v1h-1zm2 0h1v1h-1zm0-2h1v1h-1z" />
+                            </svg>
+                        </div>
+                        <div class="source-label">Government</div>
+                        <div class="source-purpose">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2ecc71"
+                                class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                            </svg>
+                            <span>Regulation</span>
+                        </div>
+                    </div>
+                    <div class="identity-source" data-type="financial">
+                        <div class="source-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-bank" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z" />
+                            </svg>
+                        </div>
+                        <div class="source-label">Financial</div>
+                        <div class="source-purpose">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2ecc71"
+                                class="bi bi-check-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05" />
+                            </svg>
+                            <span>Compliance</span>
+                        </div>
+                    </div>
+                    <div class="identity-source-problem">
+                        <div class="identity-source problem" data-type="daily" class="problem">
+                            <div class="source-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-file-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                                </svg>
+                            </div>
+                            <div class="source-label">Daily Life</div>
+                            <div class="source-purpose">Email & Phone</div>
+                            <div class="problem-indicator">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ff6b6b"
+                                    class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                                </svg>
+                                <span>Vulnerable</span>
+                            </div>
+                        </div>
+                        <div class="fracture-effects">
+                            <div class="effect-item">Scams</div>
+                            <div class="effect-item">Fraud</div>
+                            <div class="effect-item">Distrust</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="fade-in-text">At PrAIvacy, we focus on "empowering the relevant stakeholders", which forms the
+                foundation of governance. However before public awareness on the critical importance of this matter, few
+                users would voluntarily participate in this exercise, so we reverse this paradigm with a soft onboarding
+                strategy: providing daily-utility applications that build verified identity and trust as users engage.
+            </p>
+
+            <div class="solution-approach">
+                <div class="approach-visual">
+                    <div class="stakeholder-empowerment">
+                        <div class="stakeholder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="deepskyblue"
+                                class="bi bi-person-raised-hand" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a1 1 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207" />
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                            </svg>
+                        </div>
+                        <div class="stakeholder-label">Stakeholder Empowerment</div>
+                    </div>
+                    <div class="approach-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path
+                                d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                        </svg>
+                    </div>
+                    <div class="soft-onboarding">
+                        <div class="onboarding-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="chartreuse"
+                                class="bi bi-phone-flip" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+                            </svg>
+                        </div>
+                        <div class="onboarding-label">Soft Onboarding</div>
+                        <div class="onboarding-subtitle">Daily-utility apps</div>
+                    </div>
+                    <div class="approach-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path
+                                d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                        </svg>
+                    </div>
+                    <div class="trust-building">
+                        <div class="trust-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="darkorange"
+                                class="bi bi-shield-lock" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                                <path
+                                    d="M9.5 6.5a1.5 1.5 0 0 1-1 1.415l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99a1.5 1.5 0 1 1 2-1.415" />
+                            </svg>
+                        </div>
+                        <div class="trust-label">Verified Identity & Trust</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section">
+        <h2>The <b>PrAIvacy</b> Ecosystem</h2>
+        <div class="product-platforms">
+            <p>2 Core Platforms: </p>
+            <img class="product-icon-small" src="../src/assets/images/logo/proppyapp-icon.svg" alt="ProppyApp">
+            <p>ProppyApp & </p>
+            <img class="product-icon-small" src="../src/assets/images/logo/proffis-icon.png" alt="Proffis">
+            <p>Proffis</p>
+        </div>
+
+        <div class="product-platforms-mobile">
+            <p>2 Core Platforms: <b>ProppyApp & Proffis</b></p>
+        </div>
+
+        <p>
+            8 Key Applications across Fintech, Proptech, O2O ecommerce and Legaltech.
+            <br>All built on Blockchain inspired PrAIvacy Trust Architecture
+        </p>
+
+        <div class="products-grid-container">
+            <div class="products-grid">
+                <!-- Market360 -->
+                <div class="product-card" data-product="market360">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/market-360-icon.svg" alt="Market360">
+                        </div>
+                        <div class="product-title">
+                            <h3>Market360</h3>
+                            <p class="product-subtitle">O2O Digital Business Hub</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://www.proppyapp.com/market360/" class="learn-more-btn" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Replace printed media with digital
+                            identity, promote via Events,
+                            Walls, Influencer promo codes, e-commerce, vouchers, loyalty programs integrated, verified
+                            endorsements, reviews, and ratings.</p>
+                        <p class="product-tagline"><em>Build your brand's digital trust capital.</em></p>
+                    </div>
+                </div>
+
+                <!-- Homes360 -->
+                <div class="product-card" data-product="homes360">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/homes-360-icon.svg" alt="Homes360">
+                        </div>
+                        <div class="product-title">
+                            <h3>Homes360</h3>
+                            <p class="product-subtitle">Strata Community Empowerment</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://www.proppyapp.com/homes360/" class="learn-more-btn" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Realtime ownership governance for
+                            committee members, end-to-end
+                            property management dashboard, units as Non-Fungible Assets (NFA) for traceable ownership,
+                            tenant, visitor, billing, and parking management, Beep! ensures secure communication with
+                            identity masking, workflow tracking for service and maintenance vendors, owners empowered to
+                            dictate pricing or engage agents.</p>
+                        <p class="product-tagline"><em>Proptech, reimagined.</em></p>
+                    </div>
+                </div>
+
+                <!-- Org360 -->
+                <div class="product-card" data-product="org360">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/organization-icon.svg" alt="Org360">
+                        </div>
+                        <div class="product-title">
+                            <h3>Org360</h3>
+                            <p class="product-subtitle">Smart Organisation Management</p>
+                        </div>
+                        <div class="product-actions">
+                            <a class="learn-more-btn" onclick="return false;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Engage your community via Beep!, wall
+                            posts, RSVPs, sell tickets,
+                            manage subscriptions, track memberships, verified e-Polling and e-Voting, seamless AGM
+                            handovers
+                            via realtime access.</p>
+                        <p class="product-tagline"><em>Governance, simplified and secured.</em></p>
+                    </div>
+                </div>
+
+                <!-- Cardle -->
+                <div class="product-card" data-product="cardle">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/cardle-icon.svg" alt="Cardle">
+                        </div>
+                        <div class="product-title">
+                            <h3>Cardle</h3>
+                            <p class="product-subtitle">Verified Digital Business Cards</p>
+                        </div>
+                        <div class="product-actions">
+                            <a class="learn-more-btn" onclick="return false;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> "Unverified" watermark until
+                            cross-check
+                            complete, assign
+                            positions via PID QR codes, use "Bump!" to exchange verified contact info at events,
+                            e-commerce
+                            ready with promos, payments, loyalty rewards, "Badges" track awards, qualifications, and
+                            endorsements.</p>
+                        <p class="product-tagline"><em>Love at first sight, engagement at first touch.</em></p>
+                    </div>
+                </div>
+
+                <!-- SignaTrue -->
+                <div class="product-card" data-product="signatrue">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/signatrue-icon.svg" alt="SignaTrue">
+                        </div>
+                        <div class="product-title">
+                            <h3>SignaTrue</h3>
+                            <p class="product-subtitle">Blockchain-Backed Digital Signing Solution</p>
+                        </div>
+                        <div class="product-actions">
+                            <a class="learn-more-btn" onclick="return false;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Password-protected uploads for
+                            maximum
+                            privacy, identity
+                            verification options (email, mobile, ID, GPS), timestamp, IP, location logging, biometrics
+                            authentication, blockchain verification ensures non-repudiation and immutability.</p>
+                        <p class="product-tagline"><em>Trust in every authenticated transaction.</em></p>
+                    </div>
+                </div>
+
+                <!-- MOP360 -->
+                <div class="product-card" data-product="mop360">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/mop-360-icon.svg" alt="MOP360">
+                        </div>
+                        <div class="product-title">
+                            <h3>MOP360</h3>
+                            <p class="product-subtitle">Mortgage Optimisation Platform</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://www.proppyapp.com/mop360/" class="learn-more-btn" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Pay according to affordability, not
+                            fixed
+                            bank terms, simulate
+                            payoff duration and interest saved, take control from institutions and be your own loan
+                            boss.
+                        </p>
+                        <p class="product-tagline"><em>Financial freedom made programmable.</em></p>
+                    </div>
+                </div>
+
+                <!-- Prop360 -->
+                <div class="product-card" data-product="prop360">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/prop-360-icon.svg" alt="Prop360">
+                        </div>
+                        <div class="product-title">
+                            <h3>Prop360</h3>
+                            <p class="product-subtitle">Smart Real Estate Marketplace</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="https://www.proppyapp.com/prop360/" class="learn-more-btn" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Integrated with Developers, RENs,
+                            REAs,
+                            and Owners, TikTok-style
+                            dynamic listings with multi-clip previews, buyer wishlists discreetly matched with seller
+                            intents, mandatory/optional filters enhance transparency.</p>
+                        <p class="product-tagline"><em>Real-time. Real people. Real property.</em></p>
+                    </div>
+                </div>
+
+                <!-- Community360 -->
+                <div class="product-card" data-product="community360">
+                    <div class="product-header">
+                        <div class="product-icon">
+                            <img src="../src/assets/images/logo/community-360-icon.svg" alt="C360">
+                        </div>
+                        <div class="product-title">
+                            <h3>Community360</h3>
+                            <p class="product-subtitle">Tech Infrastructure for Good</p>
+                        </div>
+                        <div class="product-actions">
+                            <a class="learn-more-btn" onclick="return false;">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="m9 18 6-6-6-6" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-highlight">
+                        <p class="product-features"><strong>Key Features:</strong> Real-time charity mapping via
+                            GopherMap,
+                            charities publish
+                            verified needs, public and CSR fulfil them, transparent, visible, actionable.</p>
+                        <p class="product-tagline"><em>Turn good intentions into measurable impact.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section class="section">
+        <h2>The <b>Secret Sauce:</b><br><b>Scaling Burger</b> Architecture</h2>
+        <p>
+            How did we achieve all this in record breaking time?
+            <br>Answer: Burger Architecture, a blockchain-inspired layering design.
+        </p>
+
+        <div class="burger-architecture-visual">
+            <div class="burger-container">
+                <div class="burger-layer" data-layer="tools" data-delay="0">
+                    <div class="burger-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-terminal" viewBox="0 0 16 16">
+                            <path
+                                d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z" />
+                            <path
+                                d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+                        </svg>
+                    </div>
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <h3><span class="layer-info-label three">L°3</span> Tools</h3>
+                            <p>Core APIs & Development Kit</p>
+                        </div>
+                        <div class="layer-details">
+                            <div class="detail-item">Rapid Deployment</div>
+                            <div class="detail-item">Cross-Industry</div>
+                            <div class="detail-item">Secure APIs</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-layer" data-layer="applications" data-delay="500">
+                    <div class="burger-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-window-stack" viewBox="0 0 16 16">
+                            <path
+                                d="M4.5 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M6 6a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+                            <path
+                                d="M12 1a2 2 0 0 1 2 2 2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1-2-2V3a2 2 0 0 1 2-2zM2 12V5a2 2 0 0 1 2-2h9a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1m1-4v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V8zm12-1V5a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v2z" />
+                        </svg>
+                    </div>
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <h3><span class="layer-info-label two">L°2</span> Applications</h3>
+                            <p>8 Enterprise-Grade Apps</p>
+                        </div>
+                        <div class="layer-details">
+                            <div class="detail-item">Proptech</div>
+                            <div class="detail-item">Fintech</div>
+                            <div class="detail-item">Legaltech</div>
+                            <div class="detail-item">E-commerce</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-layer" data-layer="database" data-delay="1000">
+                    <div class="burger-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-database-lock" viewBox="0 0 16 16">
+                            <path
+                                d="M13 5.698a5 5 0 0 1-.904.525C11.022 6.711 9.573 7 8 7s-3.022-.289-4.096-.777A5 5 0 0 1 3 5.698V7c0 .374.356.875 1.318 1.313C5.234 8.729 6.536 9 8 9c.666 0 1.298-.056 1.876-.156-.43.31-.804.693-1.102 1.132A12 12 0 0 1 8 10c-1.573 0-3.022-.289-4.096-.777A5 5 0 0 1 3 8.698V10c0 .374.356.875 1.318 1.313C5.234 11.729 6.536 12 8 12h.027a4.6 4.6 0 0 0-.017.8A2 2 0 0 0 8 13c-1.573 0-3.022-.289-4.096-.777A5 5 0 0 1 3 11.698V13c0 .374.356.875 1.318 1.313C5.234 14.729 6.536 15 8 15c0 .363.097.704.266.997Q8.134 16.001 8 16c-1.573 0-3.022-.289-4.096-.777C2.875 14.755 2 14.007 2 13V4c0-1.007.875-1.755 1.904-2.223C4.978 1.289 6.427 1 8 1s3.022.289 4.096.777C13.125 2.245 14 2.993 14 4v4.256a4.5 4.5 0 0 0-1.753-.249C12.787 7.654 13 7.289 13 7zm-8.682-3.01C3.356 3.124 3 3.625 3 4c0 .374.356.875 1.318 1.313C5.234 5.729 6.536 6 8 6s2.766-.27 3.682-.687C12.644 4.875 13 4.373 13 4c0-.374-.356-.875-1.318-1.313C10.766 2.271 9.464 2 8 2s-2.766.27-3.682.687Z" />
+                            <path
+                                d="M9 13a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1" />
+                        </svg>
+                    </div>
+                    <div class="layer-content">
+                        <div class="layer-info">
+                            <h3><span class="layer-info-label one">L°1</span> Database</h3>
+                            <p>Blockchain-Inspired Foundation</p>
+                        </div>
+                        <div class="layer-details">
+                            <div class="detail-item">Data Integrity</div>
+                            <div class="detail-item">Immutable Records</div>
+                            <div class="detail-item">Trust Principles</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="architecture-flow">
+                <div class="approach-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path
+                            d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                    </svg>
+                </div>
+                <div class="flow-text">Build <b>Once</b>, Deploy <b>Everywhere</b></div>
+                <div class="approach-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path
+                            d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659" />
+                    </svg>
+                </div>
+                <div class="efficiency-indicator">
+                    <div class="efficiency-stat">
+                        <div class="stat-value">8</div>
+                        <div class="stat-label">Apps Built</div>
+                    </div>
+                    <div class="efficiency-stat">
+                        <div class="stat-value">5</div>
+                        <div class="stat-label">Years</div>
+                    </div>
+                    <div class="efficiency-stat">
+                        <div class="stat-value">∞</div>
+                        <div class="stat-label">Scalability</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="architecture-explanation">By developing core tools once, we rapidly build apps across
+            industries-efficiently and securely.</p>
+    </section>
+
+    <!-- IAAS Model Section -->
+    <section class="section">
+        <h2><b>Infrastructure-as-a-Service</b><br>B2B2C Model</h2>
+
+        <div class="b2b2c-explanation">
+            <div class="model-flow">
+                <div class="flow-step">
+                    <div class="step-label">B2B</div>
+                    <div class="step-desc">Enterprise Backend</div>
+                </div>
+                <div class="flow-arrow-x approach-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="step-label">B2C</div>
+                    <div class="step-desc">Consumer Frontend</div>
+                </div>
+                <div class="flow-arrow-x approach-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path
+                            d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753" />
+                    </svg>
+                </div>
+                <div class="flow-step">
+                    <div class="step-label">Trust</div>
+                    <div class="step-desc">Verified Interactions</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="iaas-visual">
+            <div class="iaas-platforms">
+                <div class="ai-butler-center">
+                    <img height="100px" width="100px" src="../src/assets/images/logo/propai-icon.png" alt="PropAI">
+                    <div class="butler-label">AI Butler</div>
+                    <div class="butler-subtitle">Trust Tech Core</div>
+                </div>
+
+                <div class="platform-side left">
+                    <div class="platform-card" data-platform="proppy">
+                        <div class="platform-icon">
+                            <img class="product-icon-big platform-icon-card"
+                                src="../src/assets/images/logo/proppyapp-icon.svg" alt="ProppyApp">
+                        </div>
+                        <div class="user-types">
+                            <div class="user-type">Individuals</div>
+                            <div class="user-type">Home Owners</div>
+                            <div class="user-type">Agents</div>
+                        </div>
+                        <h3>ProppyApp</h3>
+                        <p>End Users Platform</p>
+                        <div class="platform-features">
+                            <div class="feature-item">Unified Interface</div>
+                            <div class="feature-item">8 Applications</div>
+                            <div class="feature-item">Consumer Access</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="platform-side right">
+                    <div class="platform-card" data-platform="proffis">
+                        <div class="platform-icon">
+                            <img class="product-icon-big platform-icon-card"
+                                src="../src/assets/images/logo/proffis-icon.png" alt="Proffis">
+                        </div>
+                        <div class="user-types">
+                            <div class="user-type">Businesses</div>
+                            <div class="user-type">Orgs</div>
+                            <div class="user-type">Prop. Managers</div>
+                            <div class="user-type">Property Devs</div>
+                            <div class="user-type">Corp. Clients</div>
+                        </div>
+                        <h3>Proffis</h3>
+                        <p>Enterprise Backend</p>
+                        <div class="platform-features">
+                            <div class="feature-item">Admin Control</div>
+                            <div class="feature-item">Business Logic</div>
+                            <div class="feature-item">Integration APIs</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Vision Section -->
+    <section class="section">
+        <h2>The <b>Future:</b><br>Trustless <b>Transactions</b>,<br>Trusted <b>Identities</b></h2>
+
+        <div class="future-content">
+            <p>With PrAIvacy, smart contracts become intelligent bridges-not just code, but verified identity-bound
+                commitments that power secure, decentralised, and frictionless commerce.</p>
+
+            <p>Imagine automated trustless counterparty escrow services that will escalate fresh global business
+                relationships and transactions.</p>
+
+            <div class="key-question-container">
+                <img src="../src/assets/images/misc/quotes.png" class="quote open">
+                <div class="key-question-highlight">
+                    <span class="key-question-text">
+                        <b>Trustless.</b> Not trust-less.
+                    </span>
+                </div>
+                <img src="../src/assets/images/misc/quotes.png" class="quote closed">
+            </div>
+
+            <p class="m-0px"><i>This is the global problem <b>PrAIvacy solves.</b></i></p>
+        </div>
+    </section>
+
+    <!-- PrAIvacy Loyalty Methodology Section -->
+    <section class="section">
+        <h2>The <b>PrAIvacy</b><br><b>Loyalty</b> Methodology</h2>
+        <p class="section-subtitle">The world's first ever "peace of mind" loyalty program methodology, powered by
+            PrAIvacy utilising Zero Knowledge Proof (ZKP) concept.</p>
+
+        <div class="loyalty-visual">
+            <!-- Traditional Problem -->
+            <div class="traditional-problem">
+                <h3 style="text-align: center; font-size: 1.8rem; margin-bottom: 2rem; color: var(--text-primary);">
+                    The Traditional Dilemma
+                </h3>
+
+                <div class="problem-scenario">
+                    <div class="scenario-side">
+                        <div class="entity-card business">
+                            <div class="entity-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#ffc107"
+                                    class="bi bi-shop" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                                </svg>
+                            </div>
+                            <div class="entity-label">SME Business</div>
+                            <div class="entity-need">Wants Customer Data</div>
+                            <div class="security-question">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                                </svg>
+                                Can they protect it?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="vs-divider">
+                        <div
+                            style="background: var(--bg-secondary); padding: 1rem; border-radius: 50%; border: 2px solid var(--border-primary); width: 70px; height: 70px;">
+                            VS
+                        </div>
+                    </div>
+
+                    <div class="scenario-side">
+                        <div class="entity-card consumer">
+                            <div class="entity-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#3b82f6"
+                                    class="bi bi-person" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                                </svg>
+                            </div>
+                            <div class="entity-label">Consumer</div>
+                            <div class="entity-need">Wants Rewards</div>
+                            <div class="security-question">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+                                </svg>
+                                Share personal data?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dilemma-indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path
+                            d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                        <path
+                            d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                    </svg>
+                    <div class="dilemma-text">Classic Catch-22</div>
+                </div>
+            </div>
+
+            <!-- Solution Transformation -->
+            <div class="solution-transformation">
+                <div class="transformation-arrow">
+                    <div class="arrow-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor"
+                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path
+                                d="M3.204 5h9.592L8 10.481zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ZKP Solution -->
+            <div class="zkp-solution">
+                <div class="zkp-center">
+                    <div class="zkp-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="#22c55e"
+                            class="bi bi-shield-check" viewBox="0 0 16 16">
+                            <path
+                                d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+                            <path
+                                d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                        </svg>
+                    </div>
+                    <div class="zkp-label">Zero Knowledge Proof</div>
+                    <div class="zkp-subtitle">Privacy-Preserving Analytics</div>
+                </div>
+
+                <div class="data-selection">
+                    <div class="selection-option required">
+                        <div class="option-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#22c55e"
+                                class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                            </svg>
+                        </div>
+                        <div class="option-label">Compulsory Data</div>
+                        <div class="option-desc">Essential information only</div>
+                    </div>
+
+                    <div class="plus-sign">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                            class="bi bi-plus-circle" viewBox="0 0 16 16" style="color: var(--accent-primary);">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </div>
+
+                    <div class="selection-option optional">
+                        <div class="option-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#3b82f6"
+                                class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5" />
+                            </svg>
+                        </div>
+                        <div class="option-label">Optional Data</div>
+                        <div class="option-desc">User chooses what to share</div>
+                    </div>
+                </div>
+
+                <div class="result-flow">
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#22c55e"
+                                class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                <path
+                                    d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5" />
+                            </svg>
+                        </div>
+                        <div class="result-text">Consumer: Minimal data shared</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3b82f6"
+                                class="bi bi-graph-up" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
+                            </svg>
+                        </div>
+                        <div class="result-text">Business: Sufficient analytics</div>
+                    </div>
+                    <div class="result-item">
+                        <div class="result-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#a855f7"
+                                class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453 7 7 0 0 0 1.048.625c.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793z" />
+                            </svg>
+                        </div>
+                        <div class="result-text">PrAIvacy: Privacy preserved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodology Content -->
+        <div class="methodology-content">
+            <p class="fade-in-text">Businesses like to reward their loyal customers and improve services by using CRM
+                (Customer Relationship Management) systems. However to achieve that the customers' personal data will
+                have to be captured.</p>
+
+            <p class="fade-in-text">The question is, how technologically capable are SMEs (Small Medium Enterprises) to
+                safeguard the privacy and security of those sensitive data, ensuring they don't leak out unnecessarily?
+            </p>
+
+            <p class="fade-in-text">The security conscious consumers are constantly being put in the dilemma of whether
+                to exchange personal data for loyalty rewards, plus the natural reluctance to download "another" app
+                just for that specific purpose.</p>
+
+            <div class="final-solution">
+                <div style="text-align: center;" class="final-solution-icon-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="white"
+                        class="bi bi-lightbulb final-solution-icon" viewBox="0 0 16 16">
+                        <path
+                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1" />
+                    </svg>
+                </div>
+
+                <p>
+                    <i>
+                        As a result, customers can join any Market360 merchants' membership loyalty program to enjoy the
+                        perks and benefits with very minimal personal data that they are comfortable with.
+                    </i>
+                </p>
+
+                <p>
+                    <i>
+                        At the same time business intelligence analytics via ZKP powered by PrAIvacy will supply the
+                        Market360 merchants with sufficient information for CRM purposes to improve the stickiness of
+                        members to their respective businesses.
+                    </i>
+                </p>
+            </div>
+
+            <p>
+                <i>
+                    Another century old Catch22 that <b>PrAIvacy has managed to solve.</b>
+                </i>
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!--  Section -->
+
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+        <h2><b>Contact</b> Us</h2>
+        <p>Connect with PrAIvacy for support, partnerships, or to learn more about our omni-app solutions.</p>
+
+        <div class="flex-center-container">
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                        Headquarters
+                    </h3>
+                    <p>Proppy Sdn Bhd.<br>
+                        2-45, Jalan Puteri 4/8, Bandar Puteri<br>
+                        47100 Puchong, Selangor, Malaysia</p>
+                </div>
+                <div class="card">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                        </svg>
+                        Contact Us
+                    </h3>
+                    <p class="contact-links">
+                        <a class="" href="mailto:admin@proppyapp.com">admin@proppyapp.com</a><br>
+                        <a class="" href="tel:+60183938999">+6018–3938999</a>
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-clock" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                        </svg>
+                        Business Hours
+                    </h3>
+                    <p><strong>Monday-Friday:</strong><br>
+                        10am to 6pm (GMT+8:00)<br><br>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="support-notice">
+            <p>
+            <h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-info-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                    <path
+                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                </svg>
+                Hotline Support Available During Business Hours
+            </h3><br>
+            <i>Our dedicated support team is ready to assist you with any questions about 's services and solutions.</i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Mobile App Download Section -->
+    <section class="app-download">
+        <div class="container">
+            <div class="app-download-content">
+                <h2>
+                    <span class="line-1">Download.</span>
+                    <span class="line-2">Experience.</span>
+                    <span class="line-3">Be Trusted.</span>
+                    <span class="line-4">Be Amazed.</span>
+                </h2>
+                <img src="../src/assets/images/logo/logo.png" alt="PrAIvacy Logo" class="app-download-logo">
+                <p>Experience PrAIvacy's revolutionary omni-app on your mobile device</p>
+                <div class="download-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.realtysystems.proppy&hl=en&gl=US"
+                        target="_blank" class="download-btn android-btn">
+                        <img src="../src/assets/images/mobile/GooglePlay.png" alt="Get it on Google Play">
+                    </a>
+                    <a href="https://apps.apple.com/us/app/proppyapp-trust-matters/id1519445303" target="_blank"
+                        class="download-btn ios-btn">
+                        <img src="../src/assets/images/mobile/AppStore.png" alt="Download on the App Store">
+                    </a>
+                    <a href="https://appgallery.huawei.com/app/C104530257?sharePrepath=ag&locale=en_GB&source=appshare&subsource=C104530257&shareTo=com.whatsapp&shareFrom=appmarket"
+                        target="_blank" class="download-btn huawei-btn">
+                        <img src="../src/assets/images/mobile/AppGallery.png" alt="Explore it on AppGallery">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#careers">Careers</a>
+                <a href="#press">Press</a>
+                <a href="#legal">Legal</a>
+                <a href="#security">Security</a>
+            </div> -->
+            <p class="copyright-text">&copy; 2025 Proppy Sdn Bhd | Registration No. 202001031063 (1387383-P) </p>
+        </div>
+    </footer>
+    <script src="../src/assets/js/navbar-loader.js"></script>
+    <script src="../src/assets/js/main.js"></script>
+    <script src="../src/assets/js/neural-bg.js"></script>
+</body>
+
+</html>

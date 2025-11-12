@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     if (navbarPlaceholder) {
         try {
-            const response = await fetch('../assets/components/navbar.html');
+            const response = await fetch('../src/assets/components/navbar.html');
             const navbarHTML = await response.text();
             navbarPlaceholder.innerHTML = navbarHTML;
 

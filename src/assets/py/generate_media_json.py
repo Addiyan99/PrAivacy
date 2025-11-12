@@ -11,7 +11,7 @@ from pathlib import Path
 
 # Configuration
 # Paths are relative to the script location (src/assets/py/)
-MEDIA_FOLDER = "../images/Media"
+MEDIA_FOLDER = "../images/media"
 OUTPUT_FILE = "../data/media.json"
 
 # Supported image extensions
@@ -24,7 +24,6 @@ def extract_folder_number(folder_name):
 
 def extract_folder_title(folder_name):
     """Extract the title without the leading number (e.g., 'Event Name' from '01 - Event Name')"""
-    # Remove leading number and optional separator (-, _, space, etc.)
     cleaned = re.sub(r'^\d+\s*[-_]?\s*', '', folder_name)
     return cleaned.strip()
 
@@ -53,7 +52,6 @@ def scan_media_folder(media_path):
             print(f"Warning: Folder '{folder_name}' doesn't start with a number, skipping...")
             continue
         
-        # Get all image files in this folder
         try:
             all_files = os.listdir(folder_path)
             image_files = sorted([f for f in all_files if is_image_file(f)])
@@ -69,8 +67,11 @@ def scan_media_folder(media_path):
         except Exception as e:
             print(f"Error reading folder {folder_name}: {e}")
     
-    # Sort by folder number
+    # Sort by folder number (ascending)
     folders_data.sort(key=lambda x: int(x['number']))
+
+    # Reverse the list so first becomes last
+    folders_data.reverse()
     
     return folders_data
 
@@ -103,13 +104,14 @@ def generate_media_json():
         print(f"\n✓ Successfully generated {OUTPUT_FILE}")
         print(f"  Total folders: {len(folders_data)}")
         print(f"  Total images: {sum(len(f['images']) for f in folders_data)}")
+        print("  (Order reversed — first folder is now last)")
         
     except Exception as e:
         print(f"Error writing JSON file: {e}")
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Media Gallery JSON Generator")
+    print("Media Gallery JSON Generator (Reversed Order)")
     print("=" * 60)
     generate_media_json()
     print("=" * 60)

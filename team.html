@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - ProppyApp's Dream Team | PrAIvacy</title>
+    <meta name="description"
+        content="Hear from industry leaders and professionals about their experience with PrAIvacy's Trust Tech solutions.">
+    <link rel="icon" type="image/svg+xml" href="../src/assets/images/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/assets/css/styles.css">
+    <link rel="stylesheet" href="../src/assets/css/product-page.css">
+</head>
+
+<body>
+    <canvas id="neuralCanvas"></canvas>
+
+    <!-- Navigation -->
+    <div id="navbar-placeholder"></div>
+
+    <section class="teams-hero">
+        <div>
+            <h1>
+                Our <b>Team</b>
+            </h1>
+            <p class="teams-intro">
+                We strive in our Pursuit of Excellence by taking ownership of our decisions and actions
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Content -->
+    <section class="section team-page-section no-section-anim" style="padding-top: 1rem;">
+        <div id="team-container">
+            <!-- Team sections will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="copyright-text">&copy; 2025 Proppy Sdn Bhd | Registration No. 202001031063 (1387383-P)</p>
+        </div>
+    </footer>
+
+    <script src="../src/assets/js/neural-bg.js"></script>
+    <script src="../src/assets/js/navbar-loader.js"></script>
+    <script src="../src/assets/js/main.js"></script>
+    <script>
+        function toggleHistory(button) {
+            const history = button.nextElementSibling;
+            history.classList.toggle('expanded');
+            if (history.classList.contains('expanded')) {
+                button.textContent = 'Read Less';
+            } else {
+                button.textContent = 'Read More';
+            }
+        }
+
+        async function loadTeam() {
+            const container = document.getElementById('team-container');
+
+            try {
+                const response = await fetch('../src/assets/data/team.json');
+                const data = await response.json();
+
+                if (!data.sections || data.sections.length === 0) {
+                    container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 4rem 0;">No team members found.</p>';
+                    return;
+                }
+
+                data.sections.forEach(section => {
+                    const sectionDiv = document.createElement('div');
+                    sectionDiv.className = 'team-section';
+
+                    const sectionTitle = document.createElement('h2');
+                    sectionTitle.textContent = section.title;
+                    sectionDiv.appendChild(sectionTitle);
+
+                    section.members.forEach(member => {
+                        const memberLayout = document.createElement('div');
+                        memberLayout.className = 'team-member-layout';
+
+                        // Member Image
+                        const memberImageDiv = document.createElement('div');
+                        memberImageDiv.className = 'team-member-image';
+                        const img = document.createElement('img');
+                        img.src = member.image;
+                        img.alt = member.name;
+                        memberImageDiv.appendChild(img);
+
+                        // Member Details
+                        const memberDetailsDiv = document.createElement('div');
+                        memberDetailsDiv.className = 'team-member-details';
+
+                        // Title
+                        const titleP = document.createElement('p');
+                        titleP.className = 'member-info title';
+                        titleP.textContent = member.title;
+                        memberDetailsDiv.appendChild(titleP);
+
+                        // Empty line
+                        const emptyP1 = document.createElement('p');
+                        emptyP1.className = 'member-info';
+                        emptyP1.innerHTML = '<br>';
+                        memberDetailsDiv.appendChild(emptyP1);
+
+                        // Name
+                        const nameP = document.createElement('p');
+                        nameP.className = 'member-info name';
+                        nameP.innerHTML = member.name.replace(/\n/g, '<br>');
+                        memberDetailsDiv.appendChild(nameP);
+
+                        // Empty line
+                        const emptyP2 = document.createElement('p');
+                        emptyP2.className = 'member-info';
+                        emptyP2.innerHTML = '<br>';
+                        memberDetailsDiv.appendChild(emptyP2);
+
+                        // Credentials (if exists)
+                        if (member.credentials) {
+                            const credentialsP = document.createElement('p');
+                            credentialsP.className = 'member-info';
+                            credentialsP.innerHTML = member.credentials.replace(/\n/g, '<br>');
+                            memberDetailsDiv.appendChild(credentialsP);
+                        }
+
+                        // Read More Button
+                        const readMoreBtn = document.createElement('button');
+                        readMoreBtn.className = 'read-more-btn';
+                        readMoreBtn.textContent = 'Read More';
+                        readMoreBtn.onclick = function () { toggleHistory(this); };
+                        memberDetailsDiv.appendChild(readMoreBtn);
+
+                        // Member History
+                        const historyDiv = document.createElement('div');
+                        historyDiv.className = 'member-history';
+
+                        member.history.forEach(paragraph => {
+                            const p = document.createElement('p');
+                            p.innerHTML = paragraph.replace(/\n/g, '<br>');
+                            historyDiv.appendChild(p);
+                        });
+
+                        memberDetailsDiv.appendChild(historyDiv);
+
+                        // Append to layout
+                        memberLayout.appendChild(memberImageDiv);
+                        memberLayout.appendChild(memberDetailsDiv);
+                        sectionDiv.appendChild(memberLayout);
+                    });
+
+                    container.appendChild(sectionDiv);
+                });
+            } catch (error) {
+                console.error('Error loading team:', error);
+                container.innerHTML = '<p style="text-align: center; color: var(--text-secondary); padding: 4rem 0;">Unable to load team information at this time.</p>';
+            }
+        }
+
+        // Load team when page loads
+        document.addEventListener('DOMContentLoaded', loadTeam);
+    </script>
+</body>
+
+</html>
