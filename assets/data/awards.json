@@ -10,8 +10,8 @@
             "url": "",
             "icon": "bi-trophy",
             "partners": [
-                "../src/assets/images/awards/aps.png",
-                "../src/assets/images/awards/sustnet.png"
+                "../assets/images/awards/aps.png",
+                "../assets/images/awards/sustnet.png"
             ]
         },
         {
@@ -24,7 +24,7 @@
             "url": "",
             "icon": "bi-award",
             "partners": [
-                "../src/assets/images/awards/hope.png"
+                "../assets/images/awards/hope.png"
             ]
         },
         {
@@ -37,7 +37,7 @@
             "url": "https://mdec.my/md-tech-navigator/tech-use-cases/revolutionising-business--community-management-wit",
             "icon": "bi-patch-check",
             "partners": [
-                "../src/assets/images/awards/mdec.png"
+                "../assets/images/awards/mdec.png"
             ]
         },
         {
@@ -50,7 +50,7 @@
             "url": "https://www.circularbusinessassociation.org/our-approved-community",
             "icon": "bi-arrow-repeat",
             "partners": [
-                "../src/assets/images/awards/cbass.png"
+                "../assets/images/awards/cbass.png"
             ]
         }
     ],

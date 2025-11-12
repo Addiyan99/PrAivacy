@@ -6,7 +6,7 @@
                 {
                     "name": "Y.A.M. TUNKU NAQUIYUDDIN\nIBNI TUANKU JA'FAR",
                     "title": "CHAIRMAN",
-                    "image": "../src/assets/images/team/tunku.png",
+                    "image": "../assets/images/team/tunku.png",
                     "credentials": "DK, DKYR, SPNS, SPMP, PPT\nOrdre National de la Legion d'Honneur (France)\nGran Cruz de la Orden Bernardo O'Higgins (Chile)\nBSc Econs. (Hons)\nTunku Laxamana Negeri Sembilan",
                     "history": [
                         "Y.A.M. TUNKU NAQUIYUDDIN is one of the most influential and prominent businessmen in Malaysia. Following his career as a diplomat in France, he assumed the role of Chairman of Antah Holdings Berhad. He was appointed Regent of Negri Sembilan from 1994 to 1999.",
@@ -20,7 +20,7 @@
                 {
                     "name": "DR MAX CHEN",
                     "title": "FOUNDER | CHIEF EXECUTIVE OFFICER | CHIEF TECHNOLOGY OFFICER",
-                    "image": "../src/assets/images/team/dr_max.png",
+                    "image": "../assets/images/team/dr_max.png",
                     "credentials": "PhD (Software Engineering)\nMicrosoft Certified Developer",
                     "history": [
                         "Max Chen is a preeminent leader in the software architecture and development industry, with a distinguished career spanning over 30 years. His professional trajectory exemplifies a synergistic combination of deep technical acumen and extensive global influence, underscored by pioneering achievements across multiple continents.",
@@ -35,7 +35,7 @@
                 {
                     "name": "LEE WILLSON",
                     "title": "FOUNDER | CHIEF ARCHITECT, PROPPYAPP SDN. BHD.",
-                    "image": "../src/assets/images/team/wilson.png",
+                    "image": "../assets/images/team/wilson.png",
                     "credentials": "President, World Blockchain Foundation\nCo-Founder of Gartner Listed Blockchain Zoo\nBrandLaureate Award for Technology 2017 & 2019\nCCTV China Most Influential in 2018",
                     "history": [
                         "Mr Lee Willson is a globally recognised business consultant and technology architect renowned for his unparalleled achievements in establishing award-winning start-ups across the technology sector.",
@@ -52,7 +52,7 @@
                 {
                     "name": "SEAN YAP",
                     "title": "CO-FOUNDER | CHIEF OPERATING OFFICER",
-                    "image": "../src/assets/images/team/sean.png",
+                    "image": "../assets/images/team/sean.png",
                     "credentials": "BEng (Electrical & Electronics) 1st Class Hons\n– University of Sussex, UK\nMBA (Management of Technology & e-Business)\n– Cass Business School, London, UK\nChairperson, MDRT Malaysia (2021-2022)",
                     "history": [
                         "Sean Yap, the Co-Founder and Chief Operating Officer of ProppyApp®, has forged a distinguished 28-year career marked by his steadfast commitment to excellence in the engineering, automation, financial, and property technology sectors.",
@@ -71,7 +71,7 @@
                 {
                     "name": "WILL FUNG",
                     "title": "CO-FOUNDER | LEGAL ADVISOR",
-                    "image": "../src/assets/images/team/will.png",
+                    "image": "../assets/images/team/will.png",
                     "credentials": "LLB (Hons)\nImmediate Past-Chairman, Malaysian Chamber of Commerce & Industry (China)",
                     "history": [
                         "Will Fung is a highly respected legal professional with over 24 years of expertise across diverse practice areas including corporate M&A, foreign direct investments, corporate & commercial law, banking & finance, and international dispute resolution. Will has been based in Grandall Law Firm's Beijing office since 2007, where he was one of the first batch of Registered Foreign Counsel with the Beijing Justice Bureau, reflecting his deep commitment to and nuanced understanding of the Chinese and international legal landscape.",
@@ -89,7 +89,7 @@
                 {
                     "name": "JACINTH BOK",
                     "title": "CO-FOUNDER AND CHIEF OF STAFF",
-                    "image": "../src/assets/images/team/Jacinth.png",
+                    "image": "../assets/images/team/Jacinth.png",
                     "credentials": "BSc (Hons) in Applied Accounting – Oxford Brookes University, UK",
                     "history": [
                         "Ms Jacinth Bok is a dynamic and accomplished professional with a robust background in finance, accounting and entrepreneurship. She graduated with a BSc (Hons) in Applied Accounting from Oxford Brookes University, UK, and honed her skills as a former auditor with a top 10 audit firm, gaining valuable experience in financial analysis and reporting.",
@@ -102,7 +102,7 @@
                 {
                     "name": "SP LAI",
                     "title": "CHIEF PRODUCT OFFICER",
-                    "image": "../src/assets/images/team/mrlai.png",
+                    "image": "../assets/images/team/mrlai.png",
                     "credentials": "Professional Graduate Diploma in IT\nBCS Professional Member (MBCS)",
                     "history": [
                         "Mr Lai Swee Pin or better known as SP Lai is an experienced IT professional who has successfully delivered several ICT projects and large turnkey projects for a diverse client base including the private sector, public sector and government-linked companies. He is also known for his in-depth skills in System and IoT integration.",
@@ -118,7 +118,7 @@
                 {
                     "name": "Y.M. TENGKU DATO DR HISHAMMUDDIN ZAIZI BIN TENGKU AZMAN SHAH",
                     "title": "STRATEGIC ADVISOR",
-                    "image": "../src/assets/images/team/advisor-tengku.png",
+                    "image": "../assets/images/team/advisor-tengku.png",
                     "credentials": "",
                     "history": [
                         "Y. M. Tengku Dato' Dr Hishammuddin Zaizi, a distinguished member of the Selangor Royal Family, is a multifaceted leader whose influence extends across business, social causes, sports development, and international diplomacy. With an honours degree in Political Science from Australia's Flinders University, he has built an impressive career as Director of iKHASAS Group and Chairman of Oriental Kopi Holdings Berhad, where his strategic vision has driven innovation in sectors ranging from logistics to food and beverage.",
@@ -132,7 +132,7 @@
                 {
                     "name": "EVAN NGOW",
                     "title": "CO-FOUNDER AND CORPORATE TRAINING ADVISOR",
-                    "image": "../src/assets/images/team/evan.png",
+                    "image": "../assets/images/team/evan.png",
                     "credentials": "MA (Applied Linguistics)\n– Curtin University of Technology, Australia\nBEd (TESL) Hons\n– University Malaya, Malaysia\nDeputy Secretary General, World Blockchain Foundation",
                     "history": [
                         "Evan Ngow, Chief People and Culture Officer at Prince Bank PLC, Cambodia, brings over 26 years of leadership experience in corporate consulting and coaching, with a main focus on corporate organisations, banks, and financial institutions. He is a dynamic developer and leader of people, with a strong focus on strategic interventions to cultivate high-performance cultures within organisations. Evan designs and implements transformative programmes that reshape corporate systems and shape individual mindsets and behaviours.",
@@ -144,7 +144,7 @@
                 {
                     "name": "JANICE LEE",
                     "title": "CORPORATE ADVISOR",
-                    "image": "../src/assets/images/team/janicelee.png",
+                    "image": "../assets/images/team/janicelee.png",
                     "credentials": "Graduated from RMIT University, Melbourne, Australia\nA member of the China Institute of Certified Public Accountants (CICPA), Hong Kong Institute of Certified Public Accountants\nAustralia CPA, Malaysia Institute of Accountants",
                     "history": [
                         "Ms Janice Lee has more than 25 years of service experience in finance, internal control and financial management consulting. She has extensive technical knowledge and practical experience in mergers and acquisitions, initial public offerings, financial resource integration in new business acquisitions, PMO for new business initiatives, tax planning, design and execution of internal control/standard operating procedures, investment, treasury and financing.",
@@ -155,7 +155,7 @@
                 {
                     "name": "DEXTER KUA",
                     "title": "FINANCIAL SERVICES ADVISOR",
-                    "image": "../src/assets/images/team/dexter.png",
+                    "image": "../assets/images/team/dexter.png",
                     "credentials": "Former Vice Chairman of the Malaysian Chamber of Commerce and Industry in China (MAYCHAM)\nGeneral Manager of North Region China of SME Standard Chartered Bank China\nChief Operating Officer of Grassland Finances Limited.",
                     "history": [
                         "Mr Dexter Kua brings over 26 years of solid management acumen garnered from foreign banks and microfinance companies, demonstrating a profound understanding of SME loan operations in commercial banks and credit institutions. Since 2021, he has been actively involved in retail digital financing in Southeast Asia, notably in Indonesia and Vietnam.",
@@ -168,7 +168,7 @@
                 {
                     "name": "LIM SOON CHENG",
                     "title": "CORPORATE FINANCE ADVISOR",
-                    "image": "../src/assets/images/team/SCLim.png",
+                    "image": "../assets/images/team/SCLim.png",
                     "credentials": "Member of the Malaysian Association of Certified Public Accountants (MICPA)\nMember of the Malaysian Institute of Accountants (MIA)\nMember of the Financial Planning Association of Malaysia – Certified Financial Planner (CFP)",
                     "history": [
                         "Mr Lim Soon Cheng, popularly known as SC Lim, is a distinguished chartered accountant with a diverse portfolio spanning accounting, taxation, secretarial, and business advisory services. With more than 15 years of expertise in lecturing Malaysian professional examinations, specifically in Malaysian taxation papers, he is widely recognised as an expert in his field. In addition, he has a proven track record of delivering insightful seminars and public speaking engagements on taxation-related topics. His comprehensive knowledge and extensive experience have earned him a reputation as a highly respected authority in the industry.",
@@ -183,7 +183,7 @@
                 {
                     "name": "LIM SAY LEONG",
                     "title": "VENTURE CAPITAL ADVISOR",
-                    "image": "../src/assets/images/team/LSL.png",
+                    "image": "../assets/images/team/LSL.png",
                     "credentials": "Masters of Business Administration from Edinburgh Business School, Heriot-Watt University, UK\nProfessional Accountancy Qualification from The Chartered Institute of Management Accountants (CIMA), UK\nRegistered Chartered Accountant with the Malaysian Institute of Accountants (MIA)\nAssociate Member of the Chartered Tax Institute of Malaysia (CTIM)",
                     "history": [
                         "Mr Lim Say Leong is a seasoned and accomplished business leader with over three decades of experience in finance, accounting, and strategic management. Bolstered by an impressive track record, he has established himself as a prominent figure in the corporate world, having worked across diverse industries and geographical regions.",
@@ -199,7 +199,7 @@
                 {
                     "name": "WAN FARA AYU W AHMAD",
                     "title": "VENTURE CAPITAL ADVISOR",
-                    "image": "../src/assets/images/team/WAN-FARA-AYU-W-AHMAD.png",
+                    "image": "../assets/images/team/WAN-FARA-AYU-W-AHMAD.png",
                     "credentials": "BBA (Hons) Finance – Universiti Tenaga Nasional\nServed as Registered Responsible Person for Venture Capital Fund Management with the Securities Commission, Malaysia (2019 – 2023)\nVenture Capital Fund Manager\nAsia CEO Club Member (2022-2023) & ASEAN CEO Club (Member)",
                     "history": [
                         "Wan Fara Ayu W. Ahmad is a distinguished professional with over two decades of specialised experience in the venture capital and entrepreneurship landscape. She is renowned for her expertise in high-level networking, identifying potential unicorns, and making high-growth venture capital investments. Her pivotal role in nurturing startups globally has left an indelible mark on the industry.",
@@ -215,7 +215,7 @@
                 {
                     "name": "PETER LAM",
                     "title": "STRATEGIC ADVISOR",
-                    "image": "../src/assets/images/team/Peter-Lam.png",
+                    "image": "../assets/images/team/Peter-Lam.png",
                     "credentials": "B.A. in Business Administration, National University of Singapore\nT. Harv Eker certified Master Trainer\nCertified Business Coach by ActionCOACH",
                     "history": [
                         "Mr Peter Lam commands a formidable presence in the corporate world, leveraging over two decades of unparalleled expertise and leadership. Armed with a B.A. in Business Administration from the prestigious National University of Singapore, his professional trajectory is nothing short of extraordinary.",
@@ -233,7 +233,7 @@
                 {
                     "name": "ROBEST YONG",
                     "title": "INNOVATIVE ADVISOR",
-                    "image": "../src/assets/images/team/Robest-Yong.png",
+                    "image": "../assets/images/team/Robest-Yong.png",
                     "credentials": "Innovative Advisor, ProppyApp Sdn Bhd\nAdjunct Professor, DRB-HICOM University\nFounder, Prodigious Innovations Sdn Bhd\nFounder and CEO, Innopreneur Enterprise",
                     "history": [
                         "Robest Yong's career is a powerful testament to the transformative potential of innovation. From his early days as a \"Garage Inventor\" to being named Innovation Ambassador by Agency Innovation Malaysia (AIM) in 2010, Robest's journey reflects a deep commitment to groundbreaking ideas, driven by his belief in \"Thinking Without the Box.\"",
@@ -249,7 +249,7 @@
                 {
                     "name": "SIM JOH KHUANG",
                     "title": "INTERNAL CONTROL ADVISOR",
-                    "image": "../src/assets/images/team/JK-Sim.png",
+                    "image": "../assets/images/team/JK-Sim.png",
                     "credentials": "Association of Chartered Certified Accountants (ACCA)\nFellow Member, Association of Chartered Certified Accountants\nChartered Accountant, Malaysian Institute of Accountants",
                     "history": [
                         "Mr Sim Joh Khuang has more than 25 years of expertise in accounting and finance, including more than 17 years in China where he served clients from a diverse range of industries.",
@@ -261,7 +261,7 @@
                 {
                     "name": "ROBERTO CAPODIECI",
                     "title": "TECHNICAL ARCHITECT ADVISOR",
-                    "image": "../src/assets/images/team/Roberto.png",
+                    "image": "../assets/images/team/Roberto.png",
                     "credentials": "IBM Mainframe Administrator- Istituto Meccanografico Veneto, Padua, Italy",
                     "history": [
                         "Mr Roberto Capodieci is a luminary Chief Technology Officer (CTO) with a stellar three-decade track record in the IT industry. His distinguished merits and achievements have earned him a reputation as a visionary who excels in transforming challenging business initiatives into innovative and sustainable technology solutions. He is renowned for designing custom blockchain platforms and spearheading complex system integrations, achieving groundbreaking designs and industry firsts.",
@@ -274,7 +274,7 @@
                 {
                     "name": "DR RONALD TEE",
                     "title": "TECH & AI ADVISOR",
-                    "image": "../src/assets/images/team/ronald.png",
+                    "image": "../assets/images/team/ronald.png",
                     "credentials": "PhD in Wireless Communication Engineering\nMSc in Electrical Engineering\nBEng (1st Class Hons) in Electrical & Electronic Engineering",
                     "history": [
                         "Dr Ronald Tee has more than 20 years of work experience in data analytics, research, engineering and consulting. He managed and led various projects and functions covering data analytics, financial crime risk analytics, forensic investigation and litigation technology in Europe.",
@@ -287,7 +287,7 @@
                 {
                     "name": "ZIHAN TAN",
                     "title": "PATRON PROJECT C360",
-                    "image": "../src/assets/images/team/zihan.png",
+                    "image": "../assets/images/team/zihan.png",
                     "credentials": "",
                     "history": [
                         "Ms Zihan Tan is an exemplary individual who displays dedication and compassion as a Patron of Project C360. Her selfless commitment to community service has had a profound impact on the lives of those in need.",
@@ -301,7 +301,7 @@
                 {
                     "name": "ANNGELA PANG",
                     "title": "PATRON PROJECT C360",
-                    "image": "../src/assets/images/team/Anngela.png",
+                    "image": "../assets/images/team/Anngela.png",
                     "credentials": "",
                     "history": [
                         "Ms Anngela Pang is an esteemed member of our advisory team at Project C360, bringing over ten years of expertise in the curtains industry. Her professional journey spans multiple sectors, including eight successful years as a beautician in Singapore and Australia.",
