@@ -46,6 +46,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/cache-buster.js"></script>
     <script src="assets/js/neural-bg.js"></script>
     <script src="assets/js/navbar-loader.js"></script>
     <script src="assets/js/main.js"></script>
@@ -64,7 +65,7 @@
             const container = document.getElementById('team-container');
 
             try {
-                const response = await fetch('assets/data/team.json');
+                const response = await fetchWithCacheBust('assets/data/team.json');
                 const data = await response.json();
 
                 if (!data.sections || data.sections.length === 0) {
@@ -88,7 +89,7 @@
                         const memberImageDiv = document.createElement('div');
                         memberImageDiv.className = 'team-member-image';
                         const img = document.createElement('img');
-                        img.src = member.image;
+                        img.src = bustCache(member.image);
                         img.alt = member.name;
                         memberImageDiv.appendChild(img);
 

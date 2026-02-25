@@ -778,6 +778,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/cache-buster.js"></script>
     <script src="assets/js/neural-bg.js"></script>
     <script src="assets/js/navbar-loader.js"></script>
     <script src="assets/js/main.js"></script>
@@ -785,7 +786,7 @@
         // Load and display awards
         async function loadAwards() {
             try {
-                const response = await fetch('assets/data/awards.json');
+                const response = await fetchWithCacheBust('assets/data/awards.json');
                 const data = await response.json();
                 const container = document.getElementById('awards-container');
 
@@ -869,7 +870,7 @@
         // Load and display news
         async function loadNews() {
             try {
-                const response = await fetch('assets/data/awards.json');
+                const response = await fetchWithCacheBust('assets/data/awards.json');
                 const data = await response.json();
                 const container = document.getElementById('news-container');
 

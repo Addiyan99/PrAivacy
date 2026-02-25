@@ -536,6 +536,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/cache-buster.js"></script>
     <script src="assets/js/neural-bg.js"></script>
     <script src="assets/js/navbar-loader.js"></script>
     <script src="assets/js/main.js"></script>
@@ -562,7 +563,7 @@
             const container = document.getElementById('gallery-container');
 
             try {
-                const response = await fetch('assets/data/media.json');
+                const response = await fetchWithCacheBust('assets/data/media.json');
                 const data = await response.json();
 
                 const sortedFolders = data.folders.sort((a, b) => parseInt(b.number) - parseInt(a.number));
@@ -599,7 +600,7 @@
                         card.onclick = () => openLightbox(category.name, imgIndex);
 
                         const img = document.createElement('img');
-                        img.src = imagePath;
+                        img.src = bustCache(imagePath);
                         img.alt = category.name;
                         img.loading = 'lazy';
 
@@ -633,7 +634,7 @@
                 const img = document.getElementById('lightbox-img');
                 const caption = document.getElementById('lightbox-caption');
 
-                img.src = category.images[imageIndex];
+                img.src = bustCache(category.images[imageIndex]);
                 updateTransform();
                 caption.textContent = `${categoryName} (${imageIndex + 1}/${category.images.length})`;
 
@@ -668,7 +669,7 @@
 
                 img.style.opacity = '0';
                 setTimeout(() => {
-                    img.src = category.images[currentImageIndex];
+                    img.src = bustCache(category.images[currentImageIndex]);
                     caption.textContent = `${currentCategory} (${currentImageIndex + 1}/${category.images.length})`;
                     resetTransform();
                     img.style.opacity = '1';

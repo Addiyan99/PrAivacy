@@ -422,6 +422,7 @@
         </div>
     </footer>
 
+    <script src="assets/js/cache-buster.js"></script>
     <script src="assets/js/neural-bg.js"></script>
     <script src="assets/js/navbar-loader.js"></script>
     <script src="assets/js/main.js"></script>
@@ -429,7 +430,7 @@
         // Load and display testimonials
         async function loadTestimonials() {
             try {
-                const response = await fetch('assets/data/testimonials.json');
+                const response = await fetchWithCacheBust('assets/data/testimonials.json');
                 const data = await response.json();
                 const container = document.getElementById('testimonials-container');
 
