@@ -1,7 +1,7 @@
 // Cache Buster Utility
 // Update this version number whenever you update assets (JSON files, images, etc.)
 // Format: YYYYMMDD or increment number
-const CACHE_VERSION = '20260225'; // Update this when deploying changes
+const CACHE_VERSION = '202602250330'; // Automatically updated by tools/cache-bust.js
 
 /**
  * Adds cache-busting parameter to a URL
